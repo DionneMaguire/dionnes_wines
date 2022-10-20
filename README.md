@@ -23,6 +23,8 @@ The buttons throughout are the same to give the user a consistent experience.
 
 ## Deployment, forking and making a clone
 
+I have included a env.sample file to show what keys etc are required for this project.
+
 ## Credits
 
 ## Acknowledgements
