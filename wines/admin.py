@@ -2,5 +2,22 @@ from django.contrib import admin
 from .models import Wine, Category
 
 # Register your models here.
-admin.site.register(Wine)
-admin.site.register(Category)
+
+class WineAdmin(admin.ModelAdmin):
+    list_display = (
+        'name',
+        'category',
+        'grape_type',
+        'price',
+        'image',
+    )
+    ordering = ('name',)
+
+class CategoryAdmin(admin.ModelAdmin):
+    list_display = (
+        'friendly_name',
+        'name',
+    ) 
+
+admin.site.register(Wine, WineAdmin)
+admin.site.register(Category, CategoryAdmin)
