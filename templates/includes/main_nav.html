@@ -13,32 +13,15 @@
             </div>
         </li>
 
-        <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="red-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Red
-            </a>
-        </li>
-
-        <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="white-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                White
-            </a>
-        </li>
-
-        <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="rose-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Rosé
-            </a>
-        </li>
-
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="sparkling-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Sparkling & Champagne
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="" id="by-type-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Shop by Style
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="sparkling-link">
-                <a href="" class="dropdown-item">Sparkling</a>
-                <a href="" class="dropdown-item">Champagne</a>
-                <a href="" class="dropdown-item">All Sparkling &amp; Champagne</a>
+            <div class="dropdown-menu border-0" aria-labelledby="by-type-link">
+                <a href="{% url 'wines' %}?category=red" class="dropdown-item">Red</a>
+                <a href="{% url 'wines' %}?category=white" class="dropdown-item">White</a>
+                <a href="{% url 'wines' %}?category=rose" class="dropdown-item">Rosé</a>
+                <a href="{% url 'wines' %}?category=sparkling_champagne" class="dropdown-item">Sparkling &amp; Champagne</a>
             </div>
         </li>
 
