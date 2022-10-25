@@ -5,6 +5,7 @@ from .models import Wine, Category
 
 class WineAdmin(admin.ModelAdmin):
     list_display = (
+        'pk',
         'name',
         'category',
         'grape_type',
