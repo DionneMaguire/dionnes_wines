@@ -8,6 +8,7 @@ class WineAdmin(admin.ModelAdmin):
         'pk',
         'name',
         'category',
+        'grape',
         'price',
         'image',
     )
