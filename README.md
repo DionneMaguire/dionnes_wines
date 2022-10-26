@@ -27,4 +27,6 @@ I have included a env.sample file to show what keys etc are required for this pr
 
 ## Credits
 
+- images and descriptions taken from winesdirect.com
+
 ## Acknowledgements
