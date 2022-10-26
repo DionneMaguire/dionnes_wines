@@ -1,0 +1,546 @@
+[
+    {
+        "model": "wines.category",
+        "pk": 1,
+        "fields": {
+            "name": "red",
+            "friendly_name": "Red"
+        }
+    },
+    {
+        "model": "wines.category",
+        "pk": 2,
+        "fields": {
+            "name": "white",
+            "friendly_name": "White"
+        }
+    },
+    {
+        "model": "wines.category",
+        "pk": 3,
+        "fields": {
+            "name": "rose",
+            "friendly_name": "Rosé"
+        }
+    },
+    {
+        "model": "wines.category",
+        "pk": 4,
+        "fields": {
+            "name": "sparkling_champagne",
+            "friendly_name": "Sparkling & Champagne"
+        }
+    },
+    {
+        "model": "wines.wine",
+        "pk": 1,
+        "fields": {
+            "category": 2,
+            "name": "Paddy Borthwick Sauvignon Blanc",
+            "grape": "sauvignon blanc",
+            "description": "This Sauvignon Blanc is fresh with a fruity bite to it. Aromas of gooseberry, guava and pineapple supported by intense flavours of tropical fruit resulting in a white wine with great balance, structure and finesse. One of our Best Sellers from New Zealand.",
+            "price": "18.00",
+            "region": "Wairarapa",
+            "country": "New Zealand",
+            "vintage": 2021,
+            "image_url": null,
+            "image": "paddy_borthwick_bApCeN8.webp"
+        }
+    },
+    {
+        "model": "wines.wine",
+        "pk": 2,
+        "fields": {
+            "category": 2,
+            "name": "Le Petit Balthazar Blanc",
+            "grape": "sauvignon blanc",
+            "description": "Viognier and Sauvignon make the perfect couple in this crisp and refreshing white. Lush yet lively. Smooth yet sprightly.",
+            "price": "13.10",
+            "region": "Languedoc",
+            "country": "France",
+            "vintage": 2021,
+            "image_url": null,
+            "image": "le_petit_IskRPor.webp"
+        }
+    },
+    {
+        "model": "wines.wine",
+        "pk": 3,
+        "fields": {
+            "category": 2,
+            "name": "Di Filippo Villa Conversino",
+            "grape": "chardonnay",
+            "description": "Organic and biodynamic blend from Umbria, Cannara. Feather light texture with fruity aromatics. A dry white wine with straw-yellow colour and fine tears. An incredibly seductive nose full of blossoms and small white berries, and fresh cut grass.",
+            "price": "14.75",
+            "region": "Umbria",
+            "country": "Italy",
+            "vintage": 2019,
+            "image_url": null,
+            "image": "di_filippo_Dtb9j3u.webp"
+        }
+    },
+    {
+        "model": "wines.wine",
+        "pk": 4,
+        "fields": {
+            "category": 2,
+            "name": "Guerinda La Blanc",
+            "grape": "chardonnay",
+            "description": "Invigorating varietal nose with intriguing floral traits. On the palate this white wine dances to life with lively stone and citrus fruit. Scintillating texture. Amazing Chardonnay from Spain.",
+            "price": "18.35",
+            "region": "Navarra",
+            "country": "Spain",
+            "vintage": 2019,
+            "image_url": null,
+            "image": "guerinda_YFx1gI1.webp"
+        }
+    },
+    {
+        "model": "wines.wine",
+        "pk": 5,
+        "fields": {
+            "category": 2,
+            "name": "Four Sisters Chardonnay",
+            "grape": "chardonnay",
+            "description": "This delightful, fruit driven Australian white wine displays aromas of tropical fruits such as paw paw, rockmelon and guava with just a hint of lightly toasted oak. The palate exhibits fresh, ripe Chardonnay flavours of fig and melon with a delicate creamy texture a crisp, clean finish.",
+            "price": "15.60",
+            "region": "Central Victoria",
+            "country": "Australia",
+            "vintage": 2021,
+            "image_url": null,
+            "image": "four_sisters_SAmk8yP.webp"
+        }
+    },
+    {
+        "model": "wines.wine",
+        "pk": 6,
+        "fields": {
+            "category": 2,
+            "name": "Pecile",
+            "grape": "pinot grigio",
+            "description": "Unwind in style with this refreshing Pinot Grigio. Elegant floral notes along with richer hints of golden delicious apples and distinctive vegetal notes. A dry, light-bodied Italian white wine. The palate faithfully reflects the nose, with a lovely tang on the finish.",
+            "price": "13.40",
+            "region": "Delle Venezie IGT",
+            "country": "Italy",
+            "vintage": 2021,
+            "image_url": null,
+            "image": "pecile_viUfLEU.webp"
+        }
+    },
+    {
+        "model": "wines.wine",
+        "pk": 7,
+        "fields": {
+            "category": 2,
+            "name": "Fornas",
+            "grape": "pinot grigio",
+            "description": "Fornas has a fresh nose of Granny Smith apple and Conference pear. The palate is refreshingly clean and bright with peach, pear, and apple flavours. This wine has a crisp backbone of acidity throughout its balanced and long finish.",
+            "price": "14.05",
+            "region": "Friuli Grave DOC",
+            "country": "Italy",
+            "vintage": 2019,
+            "image_url": null,
+            "image": "fornas_o4IegcI.webp"
+        }
+    },
+    {
+        "model": "wines.wine",
+        "pk": 8,
+        "fields": {
+            "category": 2,
+            "name": "Paddy Borthwick Pinot Gris",
+            "grape": "pinot grigio",
+            "description": "Paddy Borthwick feels this New Zealand Pinot Gris really shows the skills of the team in the vineyard. Green harvesting and picking at the right time to ensure good acidity is crucial. Then careful winemaking, including half fermentation in old oak, half in steel, then on lees for nine months results in a wine with a great balance of weight, depth of flavour and that essential acidity.",
+            "price": "18.00",
+            "region": "Wairarapa",
+            "country": "New Zealand",
+            "vintage": 2020,
+            "image_url": null,
+            "image": "paddy_borth_pg_DxYR1gR.webp"
+        }
+    },
+    {
+        "model": "wines.wine",
+        "pk": 9,
+        "fields": {
+            "category": 2,
+            "name": "Roca",
+            "grape": "chenin blanc",
+            "description": "Light yellow wine with greenish tones. It expresses the delicate aromas of white flowers, lime, and pears. The Chardonnay personality brings a touch of smoothness and character that is enhanced by the freshness of its balanced acidity. Crunch of crispiness, with a lovey round texture from the Argentinian side of the Andes.",
+            "price": "13.50",
+            "region": "Mendoza",
+            "country": "Argentina",
+            "vintage": 2018,
+            "image_url": null,
+            "image": "roca_YiyjlQP.webp"
+        }
+    },
+    {
+        "model": "wines.wine",
+        "pk": 10,
+        "fields": {
+            "category": 2,
+            "name": "Coriole Chenin Blanc",
+            "grape": "chenin blanc",
+            "description": "Coriole Chenin Blanc is a crisp and dry white wine with a hint of kiwi fruit and a lovely clean finish. It is good with slightly spicy food, or enjoyed sitting in the garden in warm sunshine! Outstanding value from Australia.",
+            "price": "16.90",
+            "region": "Mclaren Vale",
+            "country": "Australia",
+            "vintage": 2020,
+            "image_url": null,
+            "image": "coriole_cb_6m7u60r.webp"
+        }
+    },
+    {
+        "model": "wines.wine",
+        "pk": 11,
+        "fields": {
+            "category": 1,
+            "name": "Les Granges Rouge",
+            "grape": "cabernet sauvignon",
+            "description": "Garnet nose for fresh red fruit, cherry, strawberry and violet. Sharp attack, mouth roundness and suppleness.",
+            "price": "12.80",
+            "region": "Languedoc",
+            "country": "France",
+            "vintage": 2018,
+            "image_url": null,
+            "image": "les_granges_mX61Kld.webp"
+        }
+    },
+    {
+        "model": "wines.wine",
+        "pk": 12,
+        "fields": {
+            "category": 1,
+            "name": "Bidoli",
+            "grape": "cabernet sauvignon",
+            "description": "A lovely easy drinking red Cabernet Sauvignon from Italy which has well balanced freshness and good length. One of many Vegan friendly wines available from Wines Direct.",
+            "price": "14.70",
+            "region": "Friuli Grave DOC",
+            "country": "Italy",
+            "vintage": 2018,
+            "image_url": null,
+            "image": "bidoli.webp"
+        }
+    },
+    {
+        "model": "wines.wine",
+        "pk": 13,
+        "fields": {
+            "category": 1,
+            "name": "Crios Cabernet Sauvignon",
+            "grape": "cabernet sauvignon",
+            "description": "A succulent, medium-bodied red. Plenty of that juicy, dark fruit core we expect from Argentina with smooth tannins and a lingering, vanilla and white-pepper tinged finish.",
+            "price": "17.30",
+            "region": "Mendoza",
+            "country": "Argentina",
+            "vintage": 2020,
+            "image_url": null,
+            "image": "crios_LZKPb9f.webp"
+        }
+    },
+    {
+        "model": "wines.wine",
+        "pk": 14,
+        "fields": {
+            "category": 1,
+            "name": "Gouguenheim",
+            "grape": "malbec",
+            "description": "This sun loving red wine from Argentina is deep in colour, plump and juicy, slight sweetness in the mouth with just the right amount of tannin, great with food or on its own.",
+            "price": "14.85",
+            "region": "Mendoza",
+            "country": "Argentina",
+            "vintage": 2021,
+            "image_url": null,
+            "image": "gouguenheim_6mPhMfU.webp"
+        }
+    },
+    {
+        "model": "wines.wine",
+        "pk": 15,
+        "fields": {
+            "category": 1,
+            "name": "Arbo",
+            "grape": "malbec",
+            "description": "Malbec is one of the 6 varietals traditionally grown and blended in Bordeaux it but rarely gets the opportunity to express itself on the Right Bank of Bordeaux Côtes de Castillon. A new generation winemaker, Margaux Arbo, convinced her parents to turn their one-hectare site of Malbec into this Cuvée. Pressed and fermented on skins for 3 weeks and aged in stainless steel tanks for 10 months. Real deep cassis with a mature nose and a palate of ripe dark fruit with excellent freshness, great balance and long finish.",
+            "price": "16.95",
+            "region": "Bordeaux",
+            "country": "France",
+            "vintage": 2018,
+            "image_url": null,
+            "image": "arbo_zNnBzrt.webp"
+        }
+    },
+    {
+        "model": "wines.wine",
+        "pk": 16,
+        "fields": {
+            "category": 1,
+            "name": "Chateau de Gaudou tradition",
+            "grape": "malbec",
+            "description": "This red wine is a traditional blend of Cahors — robust and full of attitude. Malbec and Tannat in their native environment produce a ruby red colour, with purple reflections and a beautiful nose of black and red fruits, notes of sweet spices and just a hint of iodine.",
+            "price": "16.20",
+            "region": "South West France",
+            "country": "France",
+            "vintage": 2018,
+            "image_url": null,
+            "image": "chateau_zyj9F3J.webp"
+        }
+    },
+    {
+        "model": "wines.wine",
+        "pk": 17,
+        "fields": {
+            "category": 1,
+            "name": "K42 Merlot",
+            "grape": "merlot",
+            "description": "This Merlot from Chile has ruby red tones with an intense varietal aroma and fresh herbal notes. A light toasted flavour provided by the subtle use of oak with a medium body and balanced palate.",
+            "price": "13.40",
+            "region": "Lontue Valley",
+            "country": "Chile",
+            "vintage": 2020,
+            "image_url": null,
+            "image": "k42.webp"
+        }
+    },
+    {
+        "model": "wines.wine",
+        "pk": 18,
+        "fields": {
+            "category": 1,
+            "name": "Domaine de Jonc Blanc 'Fruit'",
+            "grape": "merlot",
+            "description": "“FRUIT” is obviously what we are looking for in this cuvée… But make no mistake about it: it’s not a wine for thirst! It is a search for the essential, to delight the senses. To get to the essence of a wine is first of all to eliminate the artificial means of ageing and, in particular, the use of wood. Then, preserving the fruit means maturing on lees for a long time, at least 2 years, with no added sulphur. The result is a balanced, harmonious wine, coming from a limestone soil that expresses itself through small red fruits, spices, in a full, velvety mouth, but with a tense finish.",
+            "price": "22.50",
+            "region": "South West France",
+            "country": "France",
+            "vintage": 2019,
+            "image_url": null,
+            "image": "jonc_fruit_tcAMrHQ.webp"
+        }
+    },
+    {
+        "model": "wines.wine",
+        "pk": 19,
+        "fields": {
+            "category": 1,
+            "name": "Le Lion de la Fleur De Bouard",
+            "grape": "merlot",
+            "description": "Owned by the famous Boüard family, from Château Angelus 1er Grand Cru Classé. Made in the new winery which is entirely run on gravity to ensure only soft tannins are extracted. Fermentation takes place in specially constructed stainless steel, with natural yeast, and spends up to one year in barrels that are coppered on-site. The result is an intense nose with aromas of spicy mulberries and blackberries, and continuing flavours, finishing with a subtle hint of mint and soft fruit.",
+            "price": "29.85",
+            "region": "Bordeaux",
+            "country": "France",
+            "vintage": 2015,
+            "image_url": null,
+            "image": "bouard_TxQfOwr.webp"
+        }
+    },
+    {
+        "model": "wines.wine",
+        "pk": 20,
+        "fields": {
+            "category": 1,
+            "name": "Little Rascal",
+            "grape": "shiraz",
+            "description": "This is full, juicy, with rich chunky red blackberry fruit. Great value. A very fruit driven Shiraz that is fresh and fruity despite being full-bodied and rich. This doesn’t have the overpowering black pepper spice flavours that some South-East Australian Shiraz can have, make it a great all round crowd pleaser.",
+            "price": "13.20",
+            "region": "Goulburn Valley",
+            "country": "Australia",
+            "vintage": 2018,
+            "image_url": null,
+            "image": "little_ras.webp"
+        }
+    },
+    {
+        "model": "wines.wine",
+        "pk": 21,
+        "fields": {
+            "category": 1,
+            "name": "Alkoomi Shiraz",
+            "grape": "shiraz",
+            "description": "A spicy black pepper full bodied Shiraz red wine has subtle flavours of plums and hints of vanilla; ready to enjoy now. Alkoomi translates to ‘the place we chose’. This beautifully managed vineyard is not far from the ocean in South West Australia. This gives it the perfect temperatures for vine growing.",
+            "price": "16.00",
+            "region": "Frankland River",
+            "country": "Australia",
+            "vintage": 2017,
+            "image_url": null,
+            "image": "alkoomi_PnAOyvZ.webp"
+        }
+    },
+    {
+        "model": "wines.wine",
+        "pk": 22,
+        "fields": {
+            "category": 1,
+            "name": "Tahbilk shiraz",
+            "grape": "shiraz",
+            "description": "From Australia’s first family of wine. One of the oldest wineries in Australia, Tahbilk can trace its roots back to 1860. The Purbrick's, with Alister at the helm, have continued a fine tradition and you will struggle to find anything better in Australia. Red wine Aromas of plums & spice with background peppery hints lead to a Shiraz which has a solidly constructed palate of blackberry, plum and anise fruits with firm but not overly intrusive tannins on the finish.",
+            "price": "20.95",
+            "region": "Central Victoria",
+            "country": "Australia",
+            "vintage": 2017,
+            "image_url": null,
+            "image": "tahbilk_pUMdWEU.webp"
+        }
+    },
+    {
+        "model": "wines.wine",
+        "pk": 23,
+        "fields": {
+            "category": 3,
+            "name": "Domaine De Millet Rose",
+            "grape": "Egiodola",
+            "description": "Ripe raspberries and strawberries. Very round with a zingy, crisp finish. An exciting Rose wine.",
+            "price": "12.70",
+            "region": "South West France",
+            "country": "France",
+            "vintage": 2021,
+            "image_url": null,
+            "image": "domaine_millet_pxyBWoc.webp"
+        }
+    },
+    {
+        "model": "wines.wine",
+        "pk": 24,
+        "fields": {
+            "category": 3,
+            "name": "Olivares rosado",
+            "grape": "Grenacha, Monastrell",
+            "description": "Light, bright and pink; the ultimate outdoor wine companion. Vibrant ripe red fruits on the nose and palate. Aromas of strawberry and rose petal followed by a fruity, fresh and balanced wine. Savour, cold, on its own or pair with any food charring on the BBQ.",
+            "price": "13.25",
+            "region": "Jumilla",
+            "country": "Spain",
+            "vintage": 2021,
+            "image_url": null,
+            "image": "olivares_myfQLtt.webp"
+        }
+    },
+    {
+        "model": "wines.wine",
+        "pk": 25,
+        "fields": {
+            "category": 3,
+            "name": "Chateau Haut Rian Rosé",
+            "grape": "Merlot, Cabernet Sauvignon",
+            "description": "Slightly baked aromas of fruit with a palate of spice, pepper and black fruits. Savoury, spicy and delicious. A wonderful Rose wine displaying a touch of class.",
+            "price": "14.45",
+            "region": "Bordeaux",
+            "country": "France",
+            "vintage": 2021,
+            "image_url": null,
+            "image": "chat_haut_Z4fq1hw.webp"
+        }
+    },
+    {
+        "model": "wines.wine",
+        "pk": 26,
+        "fields": {
+            "category": 3,
+            "name": "Domaine Bergerie De L'Hortus - Rose",
+            "grape": "Syrah, Grenache",
+            "description": "Wine for the beach from the south of France. With an attractive pink colour, it exudes ripe, red summer fruits and gives a crisp finish. An exceptional Rose wine that deserves your attention! One of many Vegan friendly wines available from Wines Direct.",
+            "price": "20.25",
+            "region": "Languedoc",
+            "country": "France",
+            "vintage": 2021,
+            "image_url": null,
+            "image": "bergerie_icv9M3t.webp"
+        }
+    },
+    {
+        "model": "wines.wine",
+        "pk": 27,
+        "fields": {
+            "category": 4,
+            "name": "Le Contesse Frizzante",
+            "grape": "prosecco",
+            "description": "Fruity, crisp, off-dry and summery. A fresh nose is followed up with a zingy palate of light summer fruit flavours. One of our Press Reviewed Italian Prosecco's.",
+            "price": "16.65",
+            "region": "Valdobbiandene",
+            "country": "Italy",
+            "vintage": null,
+            "image_url": null,
+            "image": "contesse_frizz_LozsmSh.webp"
+        }
+    },
+    {
+        "model": "wines.wine",
+        "pk": 28,
+        "fields": {
+            "category": 4,
+            "name": "Marsuret Frizzante",
+            "grape": "prosecco",
+            "description": "The pleasure of Prosecco in its simplest and most accessible version, this light and fresh frizzante. It has a flowery bouquet with hints of acacia flowers and is elegantly fruity with notes of apple. Its pleasant, lightly sparkling taste is fresh, harmonious and simply enchanting. One of our many Italian Press Reviewed Prosecco's.",
+            "price": "16.75",
+            "region": "Valdobbiandene",
+            "country": "Italy",
+            "vintage": null,
+            "image_url": null,
+            "image": "marsuret_GrVruX9.webp"
+        }
+    },
+    {
+        "model": "wines.wine",
+        "pk": 29,
+        "fields": {
+            "category": 4,
+            "name": "Marsuret Spumante Superiore",
+            "grape": "prosecco",
+            "description": "A quality Italian sparkling wine made from a selection of hill grown grapes. An aromatic and delicate nose with a fruity, elegant palate.",
+            "price": "27.10",
+            "region": "Valdobbiandene",
+            "country": "Italy",
+            "vintage": null,
+            "image_url": null,
+            "image": "marsuret_spum_Wdu3L8y.webp"
+        }
+    },
+    {
+        "model": "wines.wine",
+        "pk": 30,
+        "fields": {
+            "category": 4,
+            "name": "J. Charpentier Brut Réserve",
+            "grape": "Pinot Meunier, Pinot Noir",
+            "description": "A 'Blanc de Noirs' made entirely of black grapes. This is the Charpentier house style, an assemblage of two years' harvest with a little oak ageing. An excellent all-around Champagne, fine, fruity and elegant.",
+            "price": "46.15",
+            "region": "Champagne",
+            "country": "France",
+            "vintage": null,
+            "image_url": null,
+            "image": "charpentier_brut_b0ZRUvq.webp"
+        }
+    },
+    {
+        "model": "wines.wine",
+        "pk": 31,
+        "fields": {
+            "category": 4,
+            "name": "J. Charpentier Brut Prestige",
+            "grape": "Chardonnay, Pinot Meunier, Pinot Noir",
+            "description": "This Champagne has delicious citrus flavours with slight buttery hints and a long, flavourful finish. The addition of 20% Chardonnay to the blend, and ageing for 22 to 30 months, lends more complexity and intensity. Fruit flavours and aromas are ripe, even tropical, and quite powerful while remaining delicate and elegant.",
+            "price": "52.00",
+            "region": "Champagne",
+            "country": "France",
+            "vintage": null,
+            "image_url": null,
+            "image": "charpentier_prestige_c18gsVo.webp"
+        }
+    },
+    {
+        "model": "wines.wine",
+        "pk": 32,
+        "fields": {
+            "category": 4,
+            "name": "J. Charpentier Millésime",
+            "grape": "Chardonnay, Pinot Noir, Pinot Meunier",
+            "description": "The Millesimé (vintage) Champagne, is not made every year, as every harvest is not considered good enough. It is made exclusively of grapes harvested in 2009, the result is a generously fruity Champagne, with the Charpentier signature power and elegance. There are classic aromas of biscuit and apples and on the palate hints of brioche, nuts and honey with a wonderful lingering finish.",
+            "price": "70.00",
+            "region": "Champagne",
+            "country": "France",
+            "vintage": null,
+            "image_url": null,
+            "image": "charpentier_mill_QqanIA7.webp"
+        }
+    }
+]
