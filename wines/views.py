@@ -7,6 +7,7 @@ from .models import Wine, Category
 
 # Create your views here.
 
+
 def all_wines(request):
     """ A view to show all wines, including sorting and search queries """
 
@@ -42,7 +43,7 @@ def all_wines(request):
             if not query:
                 messages.error(request, "You didn't enter any search criteria!")
                 return redirect(reverse('wines'))
-            
+
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             wines = wines.filter(queries)
 
