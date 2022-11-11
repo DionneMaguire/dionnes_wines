@@ -130,7 +130,7 @@ def edit_wine(request, wine_id):
 
 @login_required
 def delete_wine(request, wine_id):
-    """ Delete a product from the store """
+    """ Delete a wine from the store """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
