@@ -43,7 +43,8 @@ def all_wines(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "You didn't enter any search criteria!")
+                messages.error(request,
+                               "You didn't enter any search criteria!")
                 return redirect(reverse('wines'))
 
             queries = Q(name__icontains=query) | Q(description__icontains=query)
@@ -87,7 +88,9 @@ def add_wine(request):
             messages.success(request, 'Successfully added wine!')
             return redirect(reverse('wine_detail', args=[wine.id]))
         else:
-            messages.error(request, 'Failed to add wine. Please ensure the form is valid.')
+            messages.error(request,
+                           'Failed to add wine.'
+                           'Please ensure the form is valid.')
     else:
         form = WineForm()
 
@@ -114,7 +117,9 @@ def edit_wine(request, wine_id):
             messages.success(request, 'Successfully updated wine!')
             return redirect(reverse('wine_detail', args=[wine.id]))
         else:
-            messages.error(request, 'Failed to update wine. Please ensure the form is valid.')
+            messages.error(request,
+                           'Failed to update wine.'
+                           'Please ensure the form is valid.')
     else:
         form = WineForm(instance=wine)
         messages.info(request, f'You are editing {wine.name}')

@@ -17,7 +17,8 @@ class Category(models.Model):
 
 
 class Wine(models.Model):
-    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
+    category = models.ForeignKey('Category', null=True, blank=True,
+                                 on_delete=models.SET_NULL)
     name = models.CharField(max_length=254)
     grape = models.CharField(max_length=254, null=True, blank=True)
     description = models.TextField()
