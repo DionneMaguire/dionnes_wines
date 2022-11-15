@@ -30,12 +30,13 @@
                     <div class="card md-4">
                         <div class="card-body">
                             <div class="image-container">
-                                <img class="card-img-top"
-                                src="{{ blog.image.url }}" alt="{{ blog.title}}">
+                                <a href="{% url 'blog_detail' blog.id %}">
+                                    <img class="card-img-top" src="{{ blog.image.url }}" alt="{{ blog.title}}">
+                                </a>
                             </div>
                             <h2 class="card-title">{{ blog.title }}</h2>
                             <h5 class="card-title">{{ blog.date_created|date }}</h5>
-                            <hr/>
+                            <hr />
                         </div>
                     </div>
                 </div>
@@ -48,15 +49,15 @@
 <div class="btt-button shadow-sm rounded-0 border border-black">
     <a class="btt-link d-flex h-100">
         <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
-    </a>	
+    </a>
 </div>
 {% endblock %}
 
 {% block postloadjs %}
 {{ block.super }}
-    <script type="text/javascript">
-		$('.btt-link').click(function(e) {
-			window.scrollTo(0,0)
-		})
-	</script>
+<script type="text/javascript">
+    $('.btt-link').click(function (e) {
+        window.scrollTo(0, 0)
+    })
+</script>
 {% endblock %}
