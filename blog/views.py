@@ -83,3 +83,14 @@ def edit_blog(request, blog_id):
     }
 
     return render(request, template, context)
+
+
+def delete_blog(request, blog_id):
+    """
+    Delete a blog from the website.
+    Only a superuser can do this
+    """
+    blog = get_object_or_404(Blog, pk=blog_id)
+    blog.delete()
+    messages.success(request, f'{blog.title} deleted!')
+    return redirect(reverse('blog'))
