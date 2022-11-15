@@ -43,6 +43,11 @@
                             <h2 class="card-title">{{ blog.title }}</h2>
                             <h5 class="card-title">{{ blog.date_created|date }}</h5>
                             <hr />
+                            {% if request.user.is_superuser %}
+                                <small class="ml-3">
+                                    <a href="{% url 'edit_blog' blog.id %}">Edit</a>
+                                </small>
+                            {% endif %}
                         </div>
                     </div>
                 </div>
