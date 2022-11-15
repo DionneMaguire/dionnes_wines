@@ -1,6 +1,8 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.contrib import messages
 
 from .models import Blog
+from .forms import BlogForm
 
 
 def blog_list(request):
@@ -27,3 +29,28 @@ def blog_detail(request, blog_id):
     }
 
     return render(request, 'blog/blog_detail.html', context)
+
+
+def add_blog(request):
+    """
+    Add a blog to the website,
+    Only superuser can do this
+    """
+    if request.method == 'POST':
+        form = BlogForm(request.POST, request.FILES)
+        if form.is_valid():
+            blog = form.save()
+            messages.success(request, 'Successfully added Blog!')
+            return redirect(reverse('blog_detail', args=[blog.id]))
+        else:
+            messages.error(request,
+                           'Failed to add blog.'
+                           'Please ensure the form is valid.')
+    else:
+        form = BlogForm()
+
+    context = {
+        'form': form,
+    }
+
+    return render(request, 'blog/add_blog.html', context)
