@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 
 from .models import Blog
 from .forms import BlogForm
@@ -31,11 +32,16 @@ def blog_detail(request, blog_id):
     return render(request, 'blog/blog_detail.html', context)
 
 
+@login_required
 def add_blog(request):
     """
     Add a blog to the website,
     Only superuser can do this
     """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('blog'))
+
     if request.method == 'POST':
         form = BlogForm(request.POST, request.FILES)
         if form.is_valid():
@@ -56,11 +62,16 @@ def add_blog(request):
     return render(request, 'blog/add_blog.html', context)
 
 
+@login_required
 def edit_blog(request, blog_id):
     """
     Edit a blog
     Only superuser can do this
     """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('blog'))
+
     blog = get_object_or_404(Blog, pk=blog_id)
     if request.method == 'POST':
         form = BlogForm(request.POST, request.FILES, instance=blog)
@@ -85,11 +96,16 @@ def edit_blog(request, blog_id):
     return render(request, template, context)
 
 
+@login_required
 def delete_blog(request, blog_id):
     """
     Delete a blog from the website.
     Only a superuser can do this
     """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('blog'))
+
     blog = get_object_or_404(Blog, pk=blog_id)
     blog.delete()
     messages.success(request, f'{blog.title} deleted!')
