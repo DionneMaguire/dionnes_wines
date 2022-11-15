@@ -46,5 +46,6 @@ As we are a small business email marketing which is relatively cheap to communic
 ## Credits
 
 - images and descriptions of wines taken from winesdirect.com
+- blogs from winesdirect.ie
 
 ## Acknowledgements
