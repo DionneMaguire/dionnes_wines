@@ -44,6 +44,10 @@
     width: 1.5rem;
 }
 
+.logo-brand {
+    font-family: 'Cedarville Cursive', cursive;
+}
+
 .logo-font {
     text-transform: uppercase;
 }
@@ -121,6 +125,11 @@
 
 input[name='q']::placeholder {
     color: #aab7c4;
+}
+
+.customer-review {
+    line-height: 1;
+    font-size: 0.8rem;
 }
 
 /* ------------------------------- bootstrap toasts */
@@ -245,7 +254,7 @@ input[name='q']::placeholder {
 	color: #17a2b8; /* text-info */
 }
 
-/* Product Form */
+/* Wine Form */
 
 .btn-file {
     position: relative;
