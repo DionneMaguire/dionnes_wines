@@ -24,4 +24,42 @@
         </div>
     </div>
 </div>
+<div class="container-fluid customer-review">
+    <div class="row">
+        <div class="col text-center mt-3">
+            <h4 class="logo-font">What Our Customers Say</h4>
+            <hr class="w-50 mb-1">
+        </div>
+    </div>
+    <div class="row">
+        {% for review in reviews %}
+        <div class="col-md-4">
+            <div class="card md-4">
+                <div class="card-body">
+                    <p class="small">{{ review.name }}</p>
+                    <p class="small">{{ review.rating }}/5
+                        <i class="fas fa-star text-warning mx-auto my-auto"></i>
+                    </p>
+                    {% if user.is_authenticated or review.is_customer %}
+                    <p class="small">
+                        <i class="fas fa-check text-black mx-auto my-auto"></i>
+                        Verified Customer</p>
+                    {% else %}
+                    <p class="small">Anonymous</p>
+                    {% endif %}
+                    <p class="small">{{ review.comment }}</p>
+                    <p class="small text-muted">{{ review.date_created|date }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="row">
+        <div class="col text-center">
+            <h3>
+            <a href="{% url 'wines' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Leave a Review</a>
+            </h3>
+        </div>
+    </div>
+</div>
 {% endblock %}
