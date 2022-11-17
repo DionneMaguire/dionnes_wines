@@ -96,13 +96,12 @@
     <div class="row">
         <div class="col text-center mt-3">
             <h2 class="logo-font">Wine Reviews</h2>
-            <hr class="w-50 mb-1">
         </div>
     </div>
     <div class="row">
         <div class="col text-center">
             <h3>
-                <a href="#" class="btn btn-black rounded-0 text-uppercase py-3">
+                <a href="{% url 'add_wine_review' wine.id %}" class="btn btn-black rounded-0 text-uppercase py-3">
                     Write a Review</a>
             </h3>
             <hr class="w-50 mb-1">
@@ -111,7 +110,7 @@
     <div class="row">
         {% if reviews %}
         {% for review in reviews %}
-        <div class="col-12 col-md-3">
+        <div class="col-12 col-md-2 offset-md-2">
             <p class="small">{{ review.name }}</p>
             {% if user.is_authenticated or review.is_customer %}
             <p class="small">
@@ -121,16 +120,18 @@
             <p class="small">Anonymous</p>
             {% endif %}
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-4">
             <p class="small">{{ review.rating }}/5
-            <i class="fas fa-star text-warning mx-auto my-auto"></i>
+                <i class="fas fa-star text-warning mx-auto my-auto"></i>
             </p>
             <p class="small">{{ review.review }}</p>
         </div>
-        <div class="col-12 col-md-3">
+        <div class="col-12 col-md-2">
             <p class="small text-muted">{{ review.date_created|date }}</p>
         </div>
-        <hr class="w-50 mb-1">
+        <div class="col-12">
+            <hr class="w-50 mb-2">
+        </div>
         {% endfor%}
         {% else %}
         <div class="col text-center">

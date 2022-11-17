@@ -4,8 +4,8 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Wine, Category
-from .forms import WineForm
+from .models import Wine, Category, WineReview
+from .forms import WineForm, WineReviewForm
 
 # Create your views here.
 
@@ -63,7 +63,10 @@ def all_wines(request):
 
 
 def wine_detail(request, wine_id):
-    """ A view to show individual wine details """
+    """
+    A view to show individual wine details 
+    And any wine reviews for the individual wine
+    """
 
     wine = get_object_or_404(Wine, pk=wine_id)
     reviews = wine.reviews.order_by('date_created').filter(status=1)
@@ -146,3 +149,33 @@ def delete_wine(request, wine_id):
     wine.delete()
     messages.success(request, f'{wine.name} deleted!')
     return redirect(reverse('wines'))
+
+
+def add_wine_review(request, wine_id):
+    """
+    Add a wine review 
+    """
+    wine = get_object_or_404(Wine, pk=wine_id)
+
+    if request.method == 'POST':
+        form = WineReviewForm(request.POST)
+        if form.is_valid():
+            form.instance.is_customer = request.user.is_authenticated
+            form.instance.wine = wine
+            review = form.save()
+            messages.success(request, 'Successfully added Wine Review!')
+            return redirect(reverse('wine_detail', args=[wine.id]))
+        else:
+            messages.error(request,
+                           'Failed to add wine review.'
+                           'Please ensure the form is valid.')
+    else:
+        form = WineReviewForm()
+
+    template = 'wines/add_wine_review.html'
+    context = {
+        'form': form,
+        'wine': wine,
+    }
+
+    return render(request, template, context)
