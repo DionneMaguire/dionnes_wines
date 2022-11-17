@@ -93,6 +93,37 @@
             </div>
         </div>
     </div>
+    <div class="row">
+        <div class="col text-center mt-3">
+            <h2 class="logo-font">Wine Reviews</h2>
+            <hr class="w-50 mb-1">
+        </div>
+        <div class="col text-center">
+            <h3>
+                <a href="#" class="btn btn-black rounded-0 text-uppercase py-3">Leave a
+                    Review</a> 
+            </h3>
+        </div>
+        <div>
+            {% if reviews %}
+            {% for review in reviews %}
+            {{ review.name}}
+            {{ review.rating}}/5<i class="fas fa-star text-warning mx-auto my-auto"></i>
+            {{ review.review}}
+            {{ review.date_created|date}}
+            {% if user.is_authenticated or review.is_customer %}
+            <p class="small">
+                <i class="fas fa-check text-black mx-auto my-auto"></i>
+                Verified Customer</p>
+            {% else %}
+            <p class="small">Anonymous</p>
+            {% endif %} 
+            {% endfor%}
+            {% else %}
+            <p class="">Be the first to review {{ wine.name}}</p>
+            {% endif %}
+        </div>
+    </div>
 </div>
 {% endblock %}
 

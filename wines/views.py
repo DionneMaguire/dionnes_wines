@@ -66,9 +66,11 @@ def wine_detail(request, wine_id):
     """ A view to show individual wine details """
 
     wine = get_object_or_404(Wine, pk=wine_id)
+    reviews = wine.reviews.order_by('date_created').filter(status=1)
 
     context = {
         'wine': wine,
+        'reviews': reviews,
     }
 
     return render(request, 'wines/wine_detail.html', context)
