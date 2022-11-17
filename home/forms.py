@@ -5,7 +5,7 @@ from .models import CustomerReview
 class CustomerReviewForm(forms.ModelForm):
     class Meta:
         model = CustomerReview
-        fields = ['name', 'rating', 'comment']
+        fields = ['name', 'rating', 'is_customer', 'comment']
 
     def __init__(self, *args, **kwargs):
         """
@@ -16,6 +16,7 @@ class CustomerReviewForm(forms.ModelForm):
         placeholders = {
             'name': 'Full Name',
             'rating': 'Rating 0-5',
+            'is_customer': 'Customer',
             'comment': 'Comment/Review',
         }
 

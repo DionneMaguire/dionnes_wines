@@ -3,6 +3,7 @@ from django.contrib import messages
 
 from .forms import CustomerReviewForm
 from .models import CustomerReview
+from profiles.models import UserProfile
 
 # Create your views here.
 
@@ -28,6 +29,7 @@ def add_review(request):
     if request.method == 'POST':
         form = CustomerReviewForm(request.POST)
         if form.is_valid():
+            form.instance.is_customer = request.user.is_authenticated
             review = form.save()
             messages.success(request, 'Successfully added Review!')
             return redirect(reverse('home'))

@@ -14,7 +14,7 @@ class CustomerReview(models.Model):
     """
     Model for Customer Review 
     """
-    name = models.CharField(max_length=15, null=True, blank=True)
+    name = models.CharField(max_length=50, null=True, blank=True)
     rating = models.IntegerField(choices=RATING, default=0)
     is_customer = models.BooleanField(default=False, null=True, blank=True)
     comment = models.TextField()
