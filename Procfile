@@ -1,0 +1,1 @@
+web: gunicorn dionnes_wines.wsgi:application
