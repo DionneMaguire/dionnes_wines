@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/accounts/signup/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/accounts/login/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/bag/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/?sort=category&amp;direction=asc</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/?sort=grape&amp;direction=asc</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/?sort=country&amp;direction=asc</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/?sort=price&amp;direction=asc</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/?category=red</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/?category=white</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/?category=rose</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/?category=sparkling_champagne</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/blog/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/add/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/36/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/22/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/21/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/20/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/19/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/18/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/17/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/16/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/15/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/14/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/13/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/12/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/11/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/25/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/23/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/24/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/26/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/27/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/32/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/31/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/30/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/29/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/28/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/1/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/7/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/8/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/9/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/10/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/35/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/6/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/5/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/4/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/3/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/2/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/blog/9/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/blog/5/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/blog/4/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/blog/3/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/blog/2/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/blog/1/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/add_wine_review/36/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/add_wine_review/22/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/add_wine_review/21/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/add_wine_review/20/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/add_wine_review/19/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/add_wine_review/18/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/add_wine_review/17/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/add_wine_review/16/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/add_wine_review/15/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/add_wine_review/14/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/add_wine_review/13/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/add_wine_review/12/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/add_wine_review/11/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/add_wine_review/25/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/add_wine_review/23/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/add_wine_review/24/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/add_wine_review/26/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/add_wine_review/27/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/add_wine_review/32/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/add_wine_review/31/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/add_wine_review/30/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/add_wine_review/29/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/add_wine_review/28/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/add_wine_review/1/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/add_wine_review/7/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/add_wine_review/8/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/add_wine_review/9/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/add_wine_review/10/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/add_wine_review/35/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/add_wine_review/6/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/add_wine_review/5/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/add_wine_review/4/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/add_wine_review/3/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dionnes-wines.herokuapp.com/wines/add_wine_review/2/</loc>
+  <lastmod>2022-11-19T17:07:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>

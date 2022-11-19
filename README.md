@@ -44,6 +44,9 @@ my customers need information on wines, what wines to drink on certain occasions
 Also users being able to rate/review the buying process from my website to build trust and encourage others to buy and if a user has a bad experience then try and fix it to improve the overall offering by my website.
 The goals of my business is to sell as much wine as possible but to also encourage new customers to buy while also retaining existing customers.
 As we are a small business email marketing which is relatively cheap to communicate with potiential customers to tell them about special offers and discounts, or new wines that are available.  Also have a presence on social media platforms like facebook and instagram, promting special offers and also sharing content that is useful and of benefit to potential customers.
+
+created sitemap.xml file from www.xml-sitemaps.com
+created robots.txt file to acknowledge that search engines are allowed on this site and that they can have free access to it
 ## Credits
 
 - images and descriptions of wines taken from winesdirect.com

@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://dionnes-wines.herokuapp.com/sitemap.xml
