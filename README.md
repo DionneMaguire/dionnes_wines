@@ -54,6 +54,7 @@ Facebook page
 ## Credits
 
 - images and descriptions of wines taken from winesdirect.com
+- about us page based on winesdirect.ie and O'briens wines
 - blogs from winesdirect.ie
 
 ## Acknowledgements

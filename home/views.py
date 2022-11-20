@@ -22,12 +22,25 @@ def index(request):
     return render(request, 'home/index.html', context)
 
 
+def about_us(request):
+    """
+    Function to retrieve the About Us page
+    """
+    return render(request, 'home/about_us.html')
+
 
 def privacy_policy(request):
     """
     Function to retrieve the privacy policy page
     """
     return render(request, 'home/privacy_policy.html')
+
+
+def faq(request):
+    """
+    Function to retrieve the faq page
+    """
+    return render(request, 'home/faq.html')
 
 
 def add_review(request):
