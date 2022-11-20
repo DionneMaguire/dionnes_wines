@@ -46,7 +46,11 @@ The goals of my business is to sell as much wine as possible but to also encoura
 As we are a small business email marketing which is relatively cheap to communicate with potiential customers to tell them about special offers and discounts, or new wines that are available.  Also have a presence on social media platforms like facebook and instagram, promting special offers and also sharing content that is useful and of benefit to potential customers.
 
 created sitemap.xml file from www.xml-sitemaps.com
-created robots.txt file to acknowledge that search engines are allowed on this site and that they can have free access to it
+created robots.txt file to acknowledge that search engines are allowed on this site and that they can have free access to it.
+
+Facebook page
+![facebook](/documentation/images/facebook.png)
+
 ## Credits
 
 - images and descriptions of wines taken from winesdirect.com
