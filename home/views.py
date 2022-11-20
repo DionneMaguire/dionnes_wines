@@ -22,6 +22,14 @@ def index(request):
     return render(request, 'home/index.html', context)
 
 
+
+def privacy_policy(request):
+    """
+    Function to retrieve the privacy policy page
+    """
+    return render(request, 'home/privacy_policy.html')
+
+
 def add_review(request):
     """
     A view to add a customer review
