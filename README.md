@@ -103,6 +103,116 @@ The design is kept simple to let the wines take centre stage and also to make it
 
 ### Data Models
 
+#### Blog App - Blog model
+
+##### Blog Model
+Blog model contains the title, image and content of the blog. I have a slug field that I use as the url for the blog detail page.
+
+| Key | Name | Type |
+|-------|---------|------------|
+| | title (unique) | CharField |
+| label for url | slug (unique) | SlugField |
+| | image | ImageField |
+| | image_url | URLField |
+| |  date_created | DateTimeField |
+| | content | TextField | 
+
+#### Checkout app - Order and OrderLineItem model
+
+##### Order model
+Order Model contains the delivery information for the user, date, costs and information from the users bag
+| Key | Name | Type |
+|-------|---------|------------|
+| | order_number (unique) | CharField |
+| Foreign key | user_profile | UserProfile model|
+| | full_name | CharField |
+| | email | EmailField |
+| | phone_number | CharField |
+| | street_address1 | CharField | 
+| | street_address2 | CharField | 
+| | town_or_city | CharField | 
+| | county | CharField | 
+| | country | CharField | 
+| | postcode | CharField | 
+| | date | DateTimeField | 
+| | delivery_cost | DecimalField | 
+| | order_total | DecimalField | 
+| | grand_total | DecimalField | 
+| | original_bag | TextField | 
+| | stripe_pid | CharField | 
+
+##### OrderLineItem
+Order Line item model holds the detail information of what the user had in their shopping bag.
+
+| Key | Name | Type |
+|-------|---------|------------|
+| Foreign Key | order | Order Model |
+| Foreign Key | wine | Wine Model |
+|  | quantity | IntegerField |
+| | lineitem_total | DecimalField |
+
+#### Home app - CustomerReview model
+##### CustomerReview Model
+The customer review model is a stand alone model and isn't linked to any other model.
+| Key | Name | Type |
+|-------|---------|------------|
+|  | name | CharField |
+|  | rating | IntegerField |
+|  | is_customer | BooleanField |
+|  | comment | TextField |
+|  | date_created | DateTimeField |
+|  | status | IntegerField |
+
+#### Profile app - UserProfile model
+##### UserProfile model
+The userprofile model holds default delivery information similar to what is saved in the order model.
+| Key | Name | Type |
+|-------|---------|------------|
+| | user | User model |
+| | default_full_name | CharField |
+| | default_email | EmailField |
+| | default_phone_number | CharField |
+| | default_street_address1 | CharField | 
+| | default_street_address2 | CharField | 
+| | default_town_or_city | CharField | 
+| | default_county | CharField | 
+| | default_country | CharField | 
+| | default_postcode | CharField | 
+
+#### Wines app - Category, Wine and WineReview Model
+##### Category model
+The differnet categories in the category model are red, white, rosé and sparkling
+| Key | Name | Type |
+|-------|---------|------------|
+|  | name | CharField |
+|  | friendly_name | CharField |
+
+##### Wine Model
+The wine model holds all the information about each individual wine
+| Key | Name | Type |
+|-------|---------|------------|
+| Foreign Key | category | Category Model |
+|  | name | Charfield |
+|  | grape | Charfield |
+|  | description | Textfield |
+|  | price | Decimalfield |
+|  | region | Charfield |
+|  | country | Charfield |
+|  | vintage | Integerfield |
+|  | image_url | URLfield |
+|  | image | Imagefield |
+
+##### WineReview Model
+The wine review is linked to a particular wine and gives a rating and a review of the wine.
+| Key | Name | Type |
+|-------|---------|------------|
+| Foreign key | wine | Wine Model |
+|  | name | CharField |
+|  | rating | IntegerField |
+|  | is_customer | BooleanField |
+|  | review | TextField |
+|  | date_created | DateTimeField |
+|  | status | IntegerField |
 
 ### Typography
 
