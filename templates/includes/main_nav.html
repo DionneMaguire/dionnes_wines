@@ -1,37 +1,47 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item d-block d-md-none">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'home' %}" id="home-link">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'home' %}" id="home-link"
+                aria-label="home">
                 Home
             </a>
         </li>
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-wines-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-wines-link"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Wines
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-wines-link">
-                <a href="{% url 'wines' %}?sort=category&direction=asc" class="dropdown-item">By Category</a>
-                <a href="{% url 'wines' %}?sort=grape&direction=asc" class="dropdown-item ">By Grape</a>
-                <a href="{% url 'wines' %}?sort=country&direction=asc" class="dropdown-item ">By Country</a>
-                <a href="{% url 'wines' %}?sort=price&direction=asc" class="dropdown-item ">By Price</a>
-                <a href="{% url 'wines' %}" class="dropdown-item">All Wines</a>
+                <a href="{% url 'wines' %}?sort=category&direction=asc" class="dropdown-item"
+                    aria-label="by category">By Category</a>
+                <a href="{% url 'wines' %}?sort=grape&direction=asc" class="dropdown-item " aria-label="by grape">By
+                    Grape</a>
+                <a href="{% url 'wines' %}?sort=country&direction=asc" class="dropdown-item " aria-label="by country">By
+                    Country</a>
+                <a href="{% url 'wines' %}?sort=price&direction=asc" class="dropdown-item " aria-label="by price">By
+                    Price</a>
+                <a href="{% url 'wines' %}" class="dropdown-item" aria-label="all wines">All Wines</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="" id="by-type-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="by-type-link"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Shop by Style
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="by-type-link">
-                <a href="{% url 'wines' %}?category=red" class="dropdown-item">Red</a>
-                <a href="{% url 'wines' %}?category=white" class="dropdown-item">White</a>
-                <a href="{% url 'wines' %}?category=rose" class="dropdown-item">Rosé</a>
-                <a href="{% url 'wines' %}?category=sparkling_champagne" class="dropdown-item">Sparkling &amp; Champagne</a>
+                <a href="{% url 'wines' %}?category=red" class="dropdown-item" aria-label="red wines">Red</a>
+                <a href="{% url 'wines' %}?category=white" class="dropdown-item" aria-label="white wines">White</a>
+                <a href="{% url 'wines' %}?category=rose" class="dropdown-item" aria-label="rose wine">Rosé</a>
+                <a href="{% url 'wines' %}?category=sparkling_champagne" class="dropdown-item"
+                    aria-label="sparkling and champagne">Sparkling &amp;
+                    Champagne</a>
             </div>
         </li>
 
         <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'blog' %}" id="blog-link">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'blog' %}" id="blog-link"
+                aria-label="blog posts">
                 Blog
             </a>
         </li>
