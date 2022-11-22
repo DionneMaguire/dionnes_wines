@@ -251,6 +251,38 @@ The wine review is linked to a particular wine and gives a rating and a review o
 ## Code Validation
 
 ### HTML validation
+To validate each of my html pages I inspected the page through devtools and viewed the page source and copied and pasted into the W3C markup validation service.
+for home page
+![html home](/documentation/validation/html-home.png)
+for add customer review page
+![html add customer review](/documentation/validation/html-cust-review.png)
+for wines page
+![html wine list](/documentation/validation/html-wines.png)
+for wine detail page
+![html wine detail](/documentation/validation/html-wine-detail.png)
+for add wine review
+![html wine review](/documentation/validation/html-wine-review.png)
+for bag page
+for checkout page
+![html checkout](/documentation/validation/html-check.png)
+for confirmation page
+![html checkout-success](/documentation/validation/html-check-success.png)
+for profile page
+for blog
+![html blog list](/documentation/validation/html-blog.png)
+for blog detail
+![html blog detail](/documentation/validation/html-blog-detail.png)
+for blog add
+![html blog add](/documentation/validation/html-blog-add.png)
+for blog edit
+![html blog edit](/documentation/validation/html-blog-edit.png)
+for privacy page
+![html privacy](/documentation/validation/html-privacy.png)
+for about us page
+![html about us](/documentation/validation/html-about.png)
+for FAQ page
+![html faq](/documentation/validation/html-faq.png)
+
 ### CSS validation
 ### pep8 validation
 

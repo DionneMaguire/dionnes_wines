@@ -206,7 +206,7 @@
                                         class="button" aria-label="subscribe to mailchimp">
                                     <p class="brandingLogo"><a href="http://eepurl.com/iecHvP"
                                             title="Mailchimp - email marketing made easy and fun"><img
-                                                src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a>
+                                                alt="mailchimp logo" src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a>
                                     </p>
                                 </div>
                             </div>
@@ -225,13 +225,13 @@
         </div>
     </footer>
     {% block postloadjs %}
-    <script type="text/javascript">
+    <script>
         $('.toast').toast('show');
     </script>
     <!-- Mailchimp scripts -->
-    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'>
+    <script src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'>
     </script>
-    <script type='text/javascript'>
+    <script>
         (function ($) {
             window.fnames = new Array();
             window.ftypes = new Array();
