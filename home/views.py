@@ -9,8 +9,8 @@ from profiles.models import UserProfile
 
 
 def index(request):
-    """ 
-    A view to return the index page 
+    """
+    A view to return the index page
     display last 3 published reviews
     """
     reviews = CustomerReview.objects.filter(status=1)[:4]

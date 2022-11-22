@@ -64,7 +64,7 @@ def all_wines(request):
 
 def wine_detail(request, wine_id):
     """
-    A view to show individual wine details 
+    A view to show individual wine details
     And any wine reviews for the individual wine
     """
 
@@ -153,7 +153,7 @@ def delete_wine(request, wine_id):
 
 def add_wine_review(request, wine_id):
     """
-    Add a wine review 
+    Add a wine review
     """
     wine = get_object_or_404(Wine, pk=wine_id)
 

@@ -18,10 +18,10 @@ class Blog(models.Model):
         Blogs ordered to show newest blog first
         """
         ordering = ['-date_created']
-    
+
     def __str__(self):
         return self.title
-    
+
     def save(self, *args, **kwargs):
         if not self.slug:
             self.slug = slugify(self.title)

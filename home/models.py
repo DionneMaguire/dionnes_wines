@@ -10,9 +10,10 @@ RATING = [
     (5, '5 stars'),
 ]
 
+
 class CustomerReview(models.Model):
     """
-    Model for Customer Review 
+    Model for Customer Review
     """
     name = models.CharField(max_length=50, null=True, blank=True)
     rating = models.IntegerField(choices=RATING, default=0)
@@ -23,7 +24,6 @@ class CustomerReview(models.Model):
 
     class Meta:
         ordering = ['-date_created']
-
 
     def __str__(self):
         return self.name

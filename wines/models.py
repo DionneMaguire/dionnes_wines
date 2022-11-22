@@ -47,7 +47,8 @@ class WineReview(models.Model):
         (5, '5 stars'),
     ]
 
-    wine = models.ForeignKey(Wine, on_delete=models.CASCADE, related_name='reviews')
+    wine = models.ForeignKey(
+        Wine, on_delete=models.CASCADE, related_name='reviews')
     name = models.CharField(max_length=50, null=True, blank=True)
     rating = models.IntegerField(choices=RATING, default=0)
     is_customer = models.BooleanField(default=False, null=True, blank=True)
@@ -55,13 +56,11 @@ class WineReview(models.Model):
     date_created = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
 
-
     class Meta:
         """
         Reviews ordered to show oldest to newest
         """
         ordering = ['date_created']
-
 
     def __str__(self):
         return f"Review {self.review} of {self.wine} by {self.name}"

@@ -252,39 +252,122 @@ The wine review is linked to a particular wine and gives a rating and a review o
 
 ### HTML validation
 To validate each of my html pages I inspected the page through devtools and viewed the page source and copied and pasted into the W3C markup validation service.
+
 for home page
 ![html home](/documentation/validation/html-home.png)
+
 for add customer review page
 ![html add customer review](/documentation/validation/html-cust-review.png)
+
 for wines page
 ![html wine list](/documentation/validation/html-wines.png)
+
 for wine detail page
 ![html wine detail](/documentation/validation/html-wine-detail.png)
+
 for add wine review
 ![html wine review](/documentation/validation/html-wine-review.png)
+
+for add wine page
+![html wine add](/documentation/validation/html-wine-add.png)
+
+for edit wine page
+![html wine edit](/documentation/validation/html-wine-edit.png)
+
 for bag page
+![html bag](/documentation/validation/html-bag.png)
+
 for checkout page
 ![html checkout](/documentation/validation/html-check.png)
+I get a warning for having a empty header but it is just for my spinner as the payment is processing.
+
 for confirmation page
 ![html checkout-success](/documentation/validation/html-check-success.png)
+
 for profile page
+![html profile](/documentation/validation/html-profile.png)
+
 for blog
 ![html blog list](/documentation/validation/html-blog.png)
+
 for blog detail
 ![html blog detail](/documentation/validation/html-blog-detail.png)
+
 for blog add
 ![html blog add](/documentation/validation/html-blog-add.png)
+
 for blog edit
 ![html blog edit](/documentation/validation/html-blog-edit.png)
+
 for privacy page
 ![html privacy](/documentation/validation/html-privacy.png)
+
 for about us page
 ![html about us](/documentation/validation/html-about.png)
+
 for FAQ page
 ![html faq](/documentation/validation/html-faq.png)
 
 ### CSS validation
+
+for base.css
+
+![css base](/documentation/validation/css-base.png)
+
+for blog.css
+
+![css blog](/documentation/validation/css-blog.png)
+
+for checkout.css
+
+![css checkout](/documentation/validation/css-checkout.png)
+
+for profile.css
+
+![css profile](/documentation/validation/css-profile.png)
+
 ### pep8 validation
+I copied and pasted my python files into the PEP8CI validator.
+
+for bag>apps
+for bag>contexts
+for bag>urls
+for bag>views
+for blog>admin
+for blog>apps
+for blog>forms
+for blog>models
+for blog>urls
+for blog>views
+for checkout>admin
+for checkout>apps
+for checkout>forms
+for checkout>models
+for checkout>signals
+for checkout>urls
+for checkout>webhook_handler
+for checkout>webhooks
+for dionnes>settings
+for dionnes>urls
+for dionnes>views
+for home>admin
+for home>apps
+for homre>forms
+for home>models
+for home>urls
+for home>views
+for profile>apps
+for profile>forms
+for profile>models
+for profile>urls
+for profile>views
+for wines>admin
+for wines>apps
+for wines>forms
+for wines>models
+for wines>urls
+for wines>views
+for wines>widgets
 
 ## Testing
 
