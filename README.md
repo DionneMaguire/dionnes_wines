@@ -327,47 +327,151 @@ for profile.css
 ![css profile](/documentation/validation/css-profile.png)
 
 ### pep8 validation
+
 I copied and pasted my python files into the PEP8CI validator.
 
 for bag>apps
+![pep8 bag-apps](/documentation/validation/pep8-bag-apps.png)
+
 for bag>contexts
+![pep8 bag-context](/documentation/validation/pep8-bag-context.png)
+
 for bag>urls
+![pep8 bag-urls](/documentation/validation/pep8-bag-urls.png)
+
 for bag>views
+![pep8 bag-views](/documentation/validation/pep8-bag-views.png)
+
+for bag>bag-tools
+![pep8 bag-tools](/documentation/validation/pep8-bag-bagtools.png)
+
 for blog>admin
+![pep8 blog-admin](/documentation/validation/pep8-blog-admin.png)
+
 for blog>apps
+![pep8 blog-apps](/documentation/validation/pep8-blog-apps.png)
+
 for blog>forms
+![pep8 blog-forms](/documentation/validation/pep8-blog-forms.png)
+
 for blog>models
+![pep8 blog-models](/documentation/validation/pep8-blog-models.png)
+
 for blog>urls
+![pep8 blog-urls](/documentation/validation/pep8-blog-urls.png)
+
 for blog>views
+![pep8 blog-views](/documentation/validation/pep8-blog-views.png)
+
 for checkout>admin
+![pep8 checkout-admin](/documentation/validation/pep8-check-admin.png)
+
 for checkout>apps
+![pep8 checkout-apps](/documentation/validation/pep8-check-apps.png)
+
 for checkout>forms
+![pep8 checkout-forms](/documentation/validation/pep8-check-forms.png)
+
 for checkout>models
+![pep8 checkout-models](/documentation/validation/pep8-check-models.png)
+
 for checkout>signals
+![pep8 checkout-signals](/documentation/validation/pep8-check-signals.png)
+
 for checkout>urls
+![pep8 checkout-urls](/documentation/validation/pep8-check-urls.png)
+
 for checkout>webhook_handler
+![pep8 checkout-webhook-handler](/documentation/validation/pep8-check-webhook-handler.png)
+
 for checkout>webhooks
+![pep8 checkout-webhooks](/documentation/validation/pep8-check-webhooks.png)
+
 for dionnes>settings
+![pep8 dionnes-settings](/documentation/validation/pep8-dionnes-settings.png)
+
 for dionnes>urls
+![pep8 dionnes-urls](/documentation/validation/pep8-dionnes-urls.png)
+
 for dionnes>views
+![pep8 dionnes-views](/documentation/validation/pep8-dionnes-views.png)
+
 for home>admin
+![pep8 home-admin](/documentation/validation/pep8-home-admin.png)
+
 for home>apps
+![pep8 home-apps](/documentation/validation/pep8-home-apps.png)
+
 for homre>forms
+![pep8 home-forms](/documentation/validation/pep8-home-forms.png)
+
 for home>models
+![pep8 home-models](/documentation/validation/pep8-home-models.png)
+
 for home>urls
+![pep8 home-urls](/documentation/validation/pep8-home-urls.png)
+
 for home>views
+![pep8 home-views](/documentation/validation/pep8-home-views.png)
+
 for profile>apps
+![pep8 profile-apps](/documentation/validation/pep8-prof-apps.png)
+
 for profile>forms
+![pep8 profile-forms](/documentation/validation/pep8-prof-forms.png)
+
 for profile>models
+![pep8 profile-models](/documentation/validation/pep8-prof-models.png)
+
 for profile>urls
+![pep8 profile-urls](/documentation/validation/pep8-prof-urls.png)
+
 for profile>views
+![pep8 profile-views](/documentation/validation/pep8-prof-views.png)
+
 for wines>admin
+![pep8 wines-admin](/documentation/validation/pep8-wines-admin.png)
+
 for wines>apps
+![pep8 wines-apps](/documentation/validation/pep8-wines-apps.png)
+
 for wines>forms
+![pep8 wines-forms](/documentation/validation/pep8-wines-forms.png)
+
 for wines>models
+![pep8 wines-models](/documentation/validation/pep8-wines-models.png)
+
 for wines>urls
+![pep8 wines-urls](/documentation/validation/pep8-wines-urls.png)
+
 for wines>views
+![pep8 wines-views](/documentation/validation/pep8-wines-views.png)
+
 for wines>widgets
+![pep8 wines-widgets](/documentation/validation/pep8-wines-widgets.png)
+
+### JS validation
+I pasted js code into JS validator
+for js at the bottom of bag.html
+![js bag.html](/documentation/validation/js-bag.png)
+
+for blog.js file
+![js blog.js](/documentation/validation/js-blog.png)
+
+for stripe_element.js file
+![js stripe](/documentation/validation/js-stripe.png)
+
+for wines.js file
+![js wines.js](/documentation/validation/js-wines.png)
+
+for quantity_input_script.html
+![js quantity script](/documentation/validation/js-quantity-script.png)
+
+for add-wine.html
+![js add-wine](/documentation/validation/js-add-wine.png)
+
+for wine-detail.html file
+![js wine-detail](/documentation/validation/js-wine-detail.png)
 
 ## Testing
 
