@@ -40,7 +40,7 @@
             <p class="small">{{ review.rating }}/5
                 <i class="fas fa-star text-warning mx-auto my-auto"></i>
             </p>
-            {% if user.is_authenticated or review.is_customer %}
+            {% if review.is_customer %}
             <p class="small">
                 <i class="fas fa-check text-black mx-auto my-auto"></i>
                 Verified Customer</p>

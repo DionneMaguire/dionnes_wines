@@ -115,7 +115,7 @@
         {% for review in reviews %}
         <div class="col-12 col-md-2 offset-md-2">
             <p class="small">{{ review.name }}</p>
-            {% if user.is_authenticated or review.is_customer %}
+            {% if review.is_customer %}
             <p class="small">
                 <i class="fas fa-check text-black mx-auto my-auto"></i>
                 Verified Customer</p>

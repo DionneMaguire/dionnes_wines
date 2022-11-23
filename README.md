@@ -351,11 +351,11 @@ If the store owner clicks delete for a blog, a message pops up to make sure they
 
 ### Approve customer and wine reviews
 
-The store owner / superuser has to approve the customer and wine reviews.  When the reviews are added they have a status of 'draft' and the store owner has to change this to 'published'.  At the moment this has to be done through the admin screen.  Only when the review is published will it appear on the website.
+The store owner / superuser has to approve the customer and wine reviews.  When the reviews are added they have a status of 'draft' and the store owner has to change this to 'published'.  At the moment this has to be done through the admin screen.  Only when the review has a status of  published will it appear on the website.
 
 ## Future Features
 
-- to actually show the ratings in satrs and have no number.
+- to actually show the ratings in stars and have no number.
 - to have the approval of the customer and wine reviews from the website and not through admin.
 
 ## Design
