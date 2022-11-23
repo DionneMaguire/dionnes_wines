@@ -86,6 +86,32 @@ I am using an agile software development tool in the development of this website
 
 ### Wireframes
 
+I created my wireframes using Balsamiq.
+
+for the home page
+![wire home](/documentation/images/wire-home.png)
+
+for the wines page
+![wire wines](/documentation/images/wire-wines.png)
+
+for the wines detail page
+![wire home](/documentation/images/wire-wine-detail.png)
+
+for the shopping bag page
+![wire bag](/documentation/images/wire-bag.png)
+
+for the checkout page
+![wire checkout](/documentation/images/wire-check.png)
+
+for the confirmation page
+![wire confirmation](/documentation/images/wire-success.png)
+
+for the blog list page
+![wire blog](/documentation/images/wire-blog.png)
+
+for the blog detail page
+![wire blog detail](/documentation/images/wire-blog-detail.png)
+
 ## Existing Features
 
 ### Navbar and Footer
@@ -323,6 +349,15 @@ When update blog is clicked, a success message is shown and they are brought bac
 
 If the store owner clicks delete for a blog, a message pops up to make sure they mean to delete the blog.  If they click yes, the blog is deleted and a message is shown that the blog has been deleted.
 
+### Approve customer and wine reviews
+
+The store owner / superuser has to approve the customer and wine reviews.  When the reviews are added they have a status of 'draft' and the store owner has to change this to 'published'.  At the moment this has to be done through the admin screen.  Only when the review is published will it appear on the website.
+
+## Future Features
+
+- to actually show the ratings in satrs and have no number.
+- to have the approval of the customer and wine reviews from the website and not through admin.
+
 ## Design
 
 The design is kept simple to let the wines take centre stage and also to make it easier for users to navigate through the site.  The buttons throughout are the same to give the user a consistent experience.
@@ -442,7 +477,11 @@ The wine review is linked to a particular wine and gives a rating and a review o
 
 ### Typography
 
+The font I have selected for the website is Lato.  I have used Cedarville Cursive for the brand.  They have been selected as they are clear and simple.
+
 ### Images /color
+
+I have kept the layout and colours simple, to let the wines take center stage.
 
 ## Technologies used
 
@@ -479,6 +518,15 @@ The wine review is linked to a particular wine and gives a rating and a review o
 ### HTML validation
 To validate each of my html pages I inspected the page through devtools and viewed the page source and copied and pasted into the W3C markup validation service.
 
+for sign up page
+![html sign up](/documentation/validation/html-signup.png)
+
+for login page
+![html login](/documentation/validation/html-login.png)
+
+for logout page
+![html logout](/documentation/validation/html-logout.png)
+
 for home page
 ![html home](/documentation/validation/html-home.png)
 
@@ -505,7 +553,6 @@ for bag page
 
 for checkout page
 ![html checkout](/documentation/validation/html-check.png)
-I get a warning for having a empty header but it is just for my spinner as the payment is processing.
 
 for confirmation page
 ![html checkout-success](/documentation/validation/html-check-success.png)
@@ -609,9 +656,11 @@ for checkout>urls
 
 for checkout>webhook_handler
 ![pep8 checkout-webhook-handler](/documentation/validation/pep8-check-webhook-handler.png)
+I have 2 lines that are too long but I couldn't find a way of splitting the line with the same functionality
 
 for checkout>webhooks
 ![pep8 checkout-webhooks](/documentation/validation/pep8-check-webhooks.png)
+I have 1 line too long, that I couldn't split.
 
 for dionnes>settings
 ![pep8 dionnes-settings](/documentation/validation/pep8-dionnes-settings.png)
@@ -628,7 +677,7 @@ for home>admin
 for home>apps
 ![pep8 home-apps](/documentation/validation/pep8-home-apps.png)
 
-for homre>forms
+for home>forms
 ![pep8 home-forms](/documentation/validation/pep8-home-forms.png)
 
 for home>models
@@ -672,6 +721,7 @@ for wines>urls
 
 for wines>views
 ![pep8 wines-views](/documentation/validation/pep8-wines-views.png)
+I have 1 line that is too long and I couldn't find a way to split it.
 
 for wines>widgets
 ![pep8 wines-widgets](/documentation/validation/pep8-wines-widgets.png)
