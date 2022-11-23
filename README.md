@@ -2,7 +2,7 @@
 
 ## Purpose of this site
 
-This site has been created so that users can buy wine from the store.  Users can also read the wine descriptions to help decide what to buy.  They can also read the blog posts about new wines, vineyards etc.  Users can also add reviews about their shopping experience and also review individual wines that they have bought.  These reviews are available for all users to view.  The store owner/ superuser can add, edit and delete wines available for sale.  The store owner can also add blog posts for all users to view.  All users can but from the store whwther they are logged in or not.  The advantage of logged in users is that their delivery information can be stored and also their order history is displayed in their profile.
+This site has been created so that users can buy wine from the store.  Users can also read the wine descriptions to help decide what to buy.  They can also read the blog posts about new wines, vineyards etc.  Users can also add reviews about their shopping experience and also review individual wines that they have bought.  These reviews are available for all users to view.  The store owner/ superuser can add, edit and delete wines available for sale.  The store owner can also add blog posts for all users to view.  All users can buy from the store whether they are logged in or not.  The advantage of logged in users is that their delivery information can be stored and also their order history is displayed in their profile.
 
 ![Am I responsive](/documentation/images/amiresp-wine.png)
 
@@ -72,6 +72,7 @@ I used Github issues to record the following user stories:
 - privacy policy - as a site user I can view the privacy policy so that I can see how my information is collected and processed
 - About Us - as a site user I can view the about Us page so that I can learn more about Dionne's Wines
 - FAQ - as a site user I can view FAQ so that I can easily see more information
+- messages - as a user I can get messages after actions to confirm whether the action was successful or not.
 
 ### Agile Development Tool
 
@@ -88,18 +89,243 @@ I am using an agile software development tool in the development of this website
 ## Existing Features
 
 ### Navbar and Footer
+
+#### Navbar
+
+The navbar is plain and simple to make it easy for users to see what is available to them.  On larger screens the navbar is split into a top part and a bottom part. 
+
+![desktop navbar](/documentation/images/desk-navbar.png)
+
+The top part contains the website logo in the top left, a search box in the center and my account option and a shopping bag in the right.  My account gives a dropdown menu for registering or login.  If the user is logged in there is an extra option in the drop down menu from my account for My profile.  If the store owner/superuser is logged in then there is 2 more options available to them : blog management and wine management.
+
+The bottom part of the navbar has 2 drop down menus for users to select different ways of selecting wines. The 'All wines' options gives a dropdown menu where the user can select wine by category, grape, country or price. 
+The shop by style dropdown menu allows users to select wines by category ie red,white, rosé or sparkling & champagne. There is also a blog button for users to look at blog posts that the store owner has added. 
+
+
+In mobile view the logo is removed, some of the navbar items are collapsed into a hamburger menu.
+
+![mobile navbar](/documentation/images/mobile-navbar.png)
+
+The dropdown menu from the hamburger icon gives home, all wines, shop by style and blog.  
+
+![mobile navbar with dropdown](/documentation/images/mobile-nav-drop.png)
+
+The search box is reduced to the word search, but when the user clicks on it the search box appears. The my account and bag are also on the mobile navbar.
+
+#### Footer
+
+On larger screens the footer contains is split into 2 columns, the first is the social media link to Dionne's Wines Facebook page. If the user clicks on the facebook link it will open in a new page.  The second column containes the form from mailchimp for users to enter their email so that they receive direct emails with promotions and discounts.  Under these 2 columns are 3 links to the privacy policy, the 'About Us' page and the FAQ page.
+
+![desk footer](/documentation/images/desk-footer.png)
+
+On mobile the 2 columns stack on top of one another.
+
+![mobile footer](/documentation/images/mobile-footer.png)
+
 ### Register page
+
+I have used Allauth for register, login and logout.
+When user clicks the register button they will be brought to the register page, where they have to fill in email, username and password.
+
+![signup](/documentation/images/signup.png)
+
+The user has the option of going back to login if they have already signed up or to signup. If the form is filled in correctly and signup button clicked, the user is brought to a page for them to verify their email.  There is also an alert message that confirmation email sent to the users email.
+
+![verify email](/documentation/images/verify-email.png)
+
+The user will get an email with a link to confirm their email.  The link brings them to the page below, to confirm their email. 
+
+![confirm email](/documentation/images/confirm-email.png)
+
+When the user clicks the confirm button, they get a message to say the user has confirmed the email address and they are redirected to the signin page.
+
+![sign in](/documentation/images/sign-in.png)
+
+The user can fill in their username and password and signin or they can return to the home page.  if the user signs in they get a message to say successfully signed in as their username and they are redirected to the home screen.
+Now that the user is signed in, the options in My account are now my Profile and logout.
+If the user clicks logout, they are brought to a logout page, with the option to either cancel and return to the home page or to sign out.  
+
+![sign out](/documentation/images/sign-out.png)
+
+If they sign out, they get a message to say successfully signed out and returned to the home page.
+
 ### Profile page
+
+If a user has signed in they have access to their profile.  Their profile holds their default delivery information and any past orders that they have had.
+
+![profile](/documentation/images/profile.png)
+
+The user can update their delivery information and it is saved to their profile or when they are ordered wine their is an option in the checkout process for them to save their delivery information and it is saved to their profile.
+
 ### Home page
+
+The home page can be accessed by clicking the logo 'Dionne's Wines'.  The home page has a hero image of a lady holding a glass of wine, with text 'Buy wine online delivered to your door' and there is an action button for them to shop wines.  At the top of the image there is a banner with 'free delivers on orders over €60'.
+
+![top of home page](/documentation/images/home1.png)
+
+Under the hero image are customer reviews.  There are 4 reviews accross the page.  On mobile the reviews are stacked.
+
+![reviews on home page](/documentation/images/home2.png)
+
+There is a button for users to leave their review.  If they click the leave a review button they are taken to add a review page.
+
+### Add Customer review
+
+![customer review](/documentation/images/cust-review.png)
+
+The user has the option of filling in the review or returning to the home page.  If they fill in the review and submit it they get a message to say successfully added a review.  The store owner has to approve the review before it can be viewed on the site.
+
 ### Wine list
+
+When the user shops wines or any other option for wines, they are brought to the wines list page.
+This has an image of the bottle, the grape type, the region, the country, price and the category.
+
+![wines](/documentation/images/wines.png)
+
+On larger screens there are 4 bottles accross the screen, going down to 3 accross, then 2 accross, until they are stacked in mobile.  The category tags at the bottom of each bottle of wine also lets the user get all the white wines if they click the white wine tag. If the user clicks the bottle they are taken to the wine detail page.  There is a arrow button to return to the top of the page.
+
 ### Wine details
-### bag page
-### checkout page
+
+On large screens, there are 2 columns at the top of the page.  The first column holds the image of the bottle.  In the second column holds the details about the wine, with a quantity box. The user can use the + / - buttons or type in the quantity.  There are 2 buttons, one to return shopping and one to add the wine to you bag.
+
+![wine detail](/documentation/images/wine-detail.png)
+
+On mobile the 2 columns are stacked.
+
+If the user adds the wine to their bag, the user gets an alert saying the name of the wine has been added to the bag, and they can see the contents of their bag, the total excluding delivery, how much more they have to spend to get free delivery and a button to go to secure checkout. The user has the option to close the message and continue shopping or to click the go to secure checkout.
+
+![add to bag](/documentation/images/addtobag.png)
+
+At the bottom of the wine detail page is a place for wine reviews.  If wine reviews exist for this wine they are displayed and if not a message is displayed to ask the user to be the first to review the wine.
+
+![wine review](/documentation/images/wine-review.png)
+
+![no wine review](/documentation/images/no-wine-review.png)
+
+### Add wine review page
+
+If the user clicks write a review they are taken to the add wine review page.
+
+![add wine review](/documentation/images/add-wine-review.png)
+
+It has the name of the wine that the user is going to review.  The user fills in the form and clicks add a wine review.  The user gets a message to say successfully added a wine review.  The store owner has to approve the review before it can be viewed on the website.
+
+### Bag page
+
+When the user clicks secure checkout they are brought to the shopping bag page.
+
+![shopping bag](/documentation/images/bag.png)
+
+This page contains the wine information, the price, quantity and subtotal.  At the bottom of the page is the bag total, delivery cost, the grand total.  There is also a message to tell the user how much more they need to spend to get free delivery.  There are 2 buttons at the bottom to either continue shopping or to go to secure checkout.  On the shopping bag page the user can adjust the quantities of each wine and also remove a wine if they want to.  On mobile the information is displayed slightly differently.  The totals are at the top and the wine information is further down the page.  This page can get quite long so I have added a button to return to the top.  If the user clicks go to secure checkout, they are brought to the checkout page.
+
+### Checkout page
+
+The checkout page is split into 2 columns. The first column holds the delivery information for the user and the secong column holds the order summary.  
+
+![checkout](/documentation/images/checkout.png)
+
+If the user is logged in and has saved their delivery details to their profile the form will be filled in with their details.  If it is the users first time to order, they can fill in the checkout page and then select the save these details to my profile, and the next time they will have the form prefilled.  If the user is not signed in they will be given the option to register and login so that they can save their details.
+
+On mobile the 2 columns will be stacked, with the order information first and then the delivery and payment form.
+
+The fields on the form that are required have *. Any error in filling in the form, the page will be reloaded with the error message.
+When the complete order button is clicked a spinner is overlayed the whole screen to show the payment is being processed.  If the payment is a success the user gets a succes message with their order number and a message to say that a confirmation email has been sent to the users email.  The user is brought to a confirmation page.
+
+### Confirmation Page
+
+The confirmation page tells the user thanks for the order and that a confirmation email has been sent to the users email.  The order information, delivery information and billing information are all listed.  There is a button at the bottom of the page for the user to continue shopping.
+
+![confirmation page](/documentation/images/confirmation.png)
+
 ### blog page
+
+If the user clicks on blog on the navbar, they will be taken to the blog list page.  Each blog has an image, date and a title.  On large scereens there are 3 blogs accross the page, on mobile one blog is stacked on top of the next.
+
+![blog](/documentation/images/blog.png)
+
+If the user wants to read the blog detail they just click on the image and they are taken to the blog detail page.
+
+### Blog detail page
+
+The blog detail page, has the image, title, date and content of the blog.  On large screens it is displayed as 2 columns, with the first column holding the image anf the second column holding the details of the blog.
+
+![blog detail](/documentation/images/blog-detail.png)
+
+On mobile the columns are stacked.
+
+### Store owner / superuser options
+
+For the store owner, they need to be able to add, edit and delete wines.  So if the store owner or superuser is logged in, they have access to wine management from the navbar.  I ahve added security that only superuser can access these pages and even if people try to access them through the urls they will not be able to do so.
+
+![wine mgt](/documentation/images/wine-mgt.png)
+
+If the store owner clicks wine management they are brought to the add wine page.
+
+### Add wine page
+
+![add wine](/documentation/images/add-wine.png)
+
+The fields that are required have an astericks. The store owner can either cancel out of the page or fill in the form and add wine. The category is a drop down box so we can only pick from the categories in the database. When the form is filled in and add wine clicked, the store owner will get a message to say the wine has been successfully added and they are returned to the wine detail page of the wine just added. If an image is not selected then a stock image is added to the wine.
+
+When logged in as store owner /superuser, when they view the wine list page or the wine details page there is an option to edit or delete each wine.  There is added security to ensure that only the store owner can do these operations and people can not access them through the urls.
+
+On the wine list page
+
+![wine list edit delete](/documentation/images/list-edit-del.png)
+
+On the wine detail page
+
+![wine detail edit delete](/documentation/images/detail-edit-del.png)
+
+From either page if the store owner clicks edit they are taken to the edit wine page.  The store owner also gets an alert messgae to say that they are editing and name the wine.
+
+### Edit Wine page
+
+The edit wine page is basically the same as add wine except in edit the details of the wine are populated in the form.
+
+![edit wine](/documentation/images/edit-wine.png)
+
+The store owner can either cancel out of the page or update the fields and then click update wine.  A success message is displayed to say the named wine has been updated and the store owner is brought to the wine detail page for the updated wine.
+
+### Delete wine
+
+If the store owner clicks the delete button for a wine, a message pops up to ask are you sure you want to delete.
+
+![delete confirmation](/documentation/images/del-confirm.png)
+
+If they click ok, then the wine is deleted and they get a message to say the named wine has been deleted.
+
+The store owner can also add, edit and delete blogs.   There is security for this similar to the add wines and to stop people accessing these pages through the urls.The option for Blog management, brings the store user to the add blog page.
+
+### Add blog page
+
+![add blog](/documentation/images/add-blog.png)
+
+The store owner can add title, image and content of the blog.  They can either cancel out of the page or fill in the form and add the blog.  If an image is not selected a stock image is added to the blog.
+When the add blog button is clicked, the store owner gets a message to say the blog has been successfully added and they are brought to the blog detail page of the new blog.
+
+When signed in as the store owner or superuser when they are viewing the blog list or blog detail page the edit and delete buttons are visible.
+
+![blog edit del](/documentation/images/blog-edit-del.png)
+
+If the store owner clicks the edit button, they are brought to the edit blog page.
+
+### Edit Blog page
+
+The edit blog page is very similar to the add blog page, except the details of the blog being edited are already pre-filled.
+
+![edit blog](/documentation/images/blog-edit.png)
+
+The store owner can either cancel out of the page or edit the blog and click update blog.
+When update blog is clicked, a success message is shown and they are brought back to the blog detail for the edited blog.
+
+### Delete blog
+
+If the store owner clicks delete for a blog, a message pops up to make sure they mean to delete the blog.  If they click yes, the blog is deleted and a message is shown that the blog has been deleted.
 
 ## Design
 
-The design is kept simple to let the wines take centre stage and also to make iteasier for users to navigate through the site.  The buttons throughout are the same to give the user a consistent experience.
+The design is kept simple to let the wines take centre stage and also to make it easier for users to navigate through the site.  The buttons throughout are the same to give the user a consistent experience.
 
 ### Data Models
 
