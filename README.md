@@ -1119,11 +1119,19 @@ I have mentioned the messages that appear due to users actions throughout the te
 
 test for 404 - page not found
 
-When you check for a page that does not exist, the user gets a 404 page - yes  
+When you check for a page that does not exist, the user gets a 404 page - yes   
 
-
+![test 404](/documentation/testing/test-404.png)
 
 ### Lighthouse
+
+Testing of desktop for home page
+
+![test light desk home](/documentation/validation/light-home.png)
+
+Testing of mobile for home page
+
+![test light mob home](/documentation/validation/light-home-mob.png)
 
 ## Deployment, forking and making a clone
 

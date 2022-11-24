@@ -353,6 +353,13 @@ input[name='q']::placeholder {
     }
 }
 
+/* make order no smaller for mobile */
+@media (max-width: 450px) {
+    .order-no {
+        font-size: 0.8rem;
+    }
+}
+
 /* mailchimp */
 
 #mc_embed_signup {
