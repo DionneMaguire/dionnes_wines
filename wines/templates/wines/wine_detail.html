@@ -114,7 +114,11 @@
         {% if reviews %}
         {% for review in reviews %}
         <div class="col-12 col-md-2 offset-md-2">
+            {% if review.name %}
             <p class="small">{{ review.name }}</p>
+            {% else %}
+            <p class="small">Anonymous</p>
+            {% endif%}
             {% if review.is_customer %}
             <p class="small">
                 <i class="fas fa-check text-black mx-auto my-auto"></i>

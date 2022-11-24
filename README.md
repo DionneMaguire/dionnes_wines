@@ -357,6 +357,8 @@ The store owner / superuser has to approve the customer and wine reviews.  When 
 
 - to actually show the ratings in stars and have no number.
 - to have the approval of the customer and wine reviews from the website and not through admin.
+- to make the delete process look nicer for delete wines and delete blogs.
+- have the customer reviews on a loop that you can see all the review not just the must recent 4.
 
 ## Design
 
@@ -753,9 +755,373 @@ for wine-detail.html file
 
 ### Manual Testing
 
-### Manual Testing
+I checked each page to make sure everything looked ok at all screen sizes.  I also got family and friends to test my site on their different devices.
 
-- remember to test 404 handler - check refactor video part 4
+I am going to use my user stories as the structure for my manual testing.  The testing was carried out on my development website and the fully deployed site on heruko.
+
+Firstly I am going to check the navbar and footer as these elements do not fall clearly into any of the user stories.
+
+Desktop navbar  
+
+When the logo is clicked brings you to the home page - yes  
+I get an error when I don't enter a search criteria but click the search button - yes  
+When not logged in the My account dropdown gives register and login - yes  
+When I click the shopping bag it brings me to the shopping bag page. -yes  
+
+Mobile navbar  
+
+The hamburger icon drops down to give home because the logo is hidden in mobile as there isn't enough room.  Also has the all wines, shop by style and blog -yes  
+Clicking search opens the search box - yes  
+If not logged in the my account drops down register and login - yes  
+Clicking shopping bag brings you to shopping bag page - yes  
+
+Desktop/Mobile footer  
+
+Link to facebook page - opens dionne's wines facebook page on a new tab - yes  
+Mailchimp adding email, gets success message and checked email is added to mailchimp account -yes  
+About us, privacy and FAQ pages all open to correct pages - yes  
+
+#1 easily register for account / #3 email confirmation
+
+On the signup page, you have to enter correct data in all the fields, the email must be a proper email address, the username must be at least 4 characters you must enter the same password twice or you get a warning message - yes  
+
+![test signup](/documentation/testing/test-signup.png)
+
+When the form is filled in correctly, user is redirected to a verify your email address and a message to say an email has been sent to the email entered to confirm.  There is also an alert message to tell the user the email has been sent to and gives the email address.
+When you go to the link in the email it brings you to this page.
+
+![test email](/documentation/testing/test-confirm.png)
+
+When you click the confirm button you are brought to the login page.  There is also a message to say the user has been confirmed.
+
+![test email confirm message](/documentation/testing/test-email-mess.png)
+
+#2 easily login and logout
+
+The login form has to be filled in, or get error message, user and password have to match. When click login, you get a success message - you have successfully logged in as username.
+When logged in the options in my account dropdown change to profile and logout - yes  
+When I click logout, I am brought to a logout page to check I resally want to logout, if click sigout, I get a message to say you have logged out.
+
+#4 view a list of wines
+
+I can view the list of wines, and the back to top button works - yes
+
+#5 view wine details
+
+When you click on the bottle of wine it takes you to the detail on this wine -yes
+
+#6 sort list of wines
+
+Check the all wines dropdown menu works and retrieves the correct wine in the correct order - yes  
+Check that the sort by box works and again shows the correct wines in the correct order - yes
+
+#7 search for wines / #8 easily see what searched for
+
+Check that the search word is present in the returned wines -yes  
+The search word/s is clearly visible and the search result - yes
+
+![test search result](/documentation/testing/test-search.png)
+
+#9 view categories of wines
+
+Categories of wine can be searched by the dropdown menu - shop by style.  
+Checked that for example all red wines are returned when search for red - yes  
+Each wine also has a tag with the category that they are in, if this tag is clicked it returns all wines in this category - yes
+
+#11 select quantity
+
+The - button is disabled so can't go below 1 - yes  
+If you type 0 you get a warning message to say quantity must be greater than 0 - yes  
+The arrows won't let me go below 1 - yes  
+Can't go above 99 with + or arrows - yes  
+
+#12 view items in bag
+
+When user clicks add to bag, a success message shows that the particular wine has been added to the bag.  The contents of the bag are shown, with the cost excluding delivery and also how much more the user has to spend to get free delivery.
+
+![test add to bag](/documentation/testing/test-add-to-bag.png)
+
+If the user clicks the go to secure checkout button, they are brought to the shopping bag page.  The user can also get to this page by clicking on the bag in the navbar - yes  
+The shopping bag page shows the name of the wine, a small image, the price, quantity and subtotal - yes
+
+#13 adjust quantity in bag
+
+If the user adjusts the quantity on the shopping bag page, they get a message to say updated the name of the wine to new quantity.  The sub total, delivery and grand total are all updated - yes  
+The bag total in the navbar is also updated correctly - yes  
+When items are removed from the bag again everything is updated as before, the user gets a message to say the name of the wine has been removed - yes  
+If everything is removed the user gets the shopping bag page with a message nothing in their shopping bag - yes
+
+#10 view total cost of my purchases
+
+While the user is adding items to their bag, each time they add something or remove something a message pops up to confirm what action they have taken and a small version of their bag with the total excluding delivery and how much more they have to spend to get free delivery.  When they click on either the bag on the navbar or the go to secure checkout, they are brought to the shopping bag page which has each item they have added to their bag, with quantity, price and subtotal, then the bag total, the delivery cost if any and the grand total.
+
+![test total cost](/documentation/testing/test-tot-cost.png)
+
+#15 secure checkout / #16 quick and easy checkout
+
+When the user clicks secure checkout they are brought to the checkout page - yes  
+
+![test checkout](/documentation/testing/test-check.png)
+
+All the required fields have astericks, so if the user does not fill all of these in they get a message to please fill in the field.  The email must be the format of an email.
+
+![test fields](/documentation/testing/test-fields.png)
+
+If the card number isn't filled in correctly or is invalid as message shows up - yes  
+
+![test card](/documentation/testing/test-card.png) 
+
+The card information must all be correct and match.  For testing purposes I have used card number
+4242424242424242, date in future, cvc123.
+
+If the user is signed in and have not updated their profile information, in the checkout page their email address will be already in the form.
+
+![test signed in email](/documentation/testing/test-signedin.png)
+
+Signed in users will also have the option to save their delivery information to their profile, which means if they do, when they return to the checkout page for their next purchase the form will be prefilled for them.  
+For logged in user checkout form is prefilled - yes  
+
+![test option to save info](/documentation/testing/test-opt-save.png)
+
+Users that are not logged in are given the option to login or register instead of the option to save their information. 
+
+To test I am completing an order for €19.80 using the card details below - yes
+
+![test pay](/documentation/testing/test-pay.png)
+
+The user is brought to the confirmation page with the order number and details -yes 
+
+![test pay confirmation](/documentation/testing/test-confirm-pay.png)
+
+Checked in stripe to make sure the payment was successful -yes  
+
+![test stripe](/documentation/testing/test-stripe.png)
+
+Also check the webhook was successful
+
+![test stripe webhook](/documentation/testing/test-webhook.png)
+
+And finally check in the database to make sure the order has been added -yes
+
+![test order in db](/documentation/testing/test-order-admin.png)
+
+If for some reason the user clicks out of the browser when their payment is being processed, the webhook checks if the order has been written to the database and if not the webhook handler writes the order to database.  I can produce this situation by commenting out my form.submit in stripe_element.js.  
+payment successful stripe - yess  
+webhook successful - yes
+order in database - yes
+
+#17 order confirmation
+
+When payment has been processed the user is brought to confirmation page and an email is sent to the user with the order details
+
+![test order email](/documentation/testing/test-email-confirm.png)
+
+#14 User profile
+
+When a user registers, a user profile is set up for them. It is empty appart from their email address that they used to register with. The user has 2 options they can go into my profile from the navbar and save their details or through the checkout process documented above they have the option of saving their delivery details so that the next time through the checkout process their details will be prefilled in the checkout form.
+
+Also on the profile page is the users past orders that they can click on the individual orders and see the details.  
+
+The profile form fields can be updated by the user and then they can click the update button to save these changes.
+
+![test profile](/documentation/testing/test-profile.png)
+
+I have security in place so that a non logged in user cannot access this page and if they try to from the url they get taken to the login page - yes  
+
+#18 free delivery threshold
+
+Check that they free threshold is working correctly.  
+if the user has spent more than €60, they have free delivery - yes  
+if the user has spent less than €60, there is a message to say how much more they have to spend to get free delivery - yes  
+
+#19 add a wine
+
+This is only available to the store owner, if a not logged in user tries to get to the add wine page they are redirected to the sign in page - yes 
+If a logged in user not the store owner tries to access the add wine page they get an error message - yes  
+
+![test user not store owner](/documentation/testing/test-err.png)
+
+The store owner has the option from the navbar for wine management -yes  
+
+![test wine management](/documentation/testing/test-wine-man.png)
+
+When they click wine management they are brought to the add wine page - yes  
+
+![test add wine](/documentation/testing/test-add-wine.png)
+
+The required fields have astericks and need to be filled or the user gets an error - yes  
+The category field is a dropdown box.  If the store owner needs to add another category they will have to go to admin to add it and then the new category will be available here - yes 
+If the price has too many digits - max is 6 you get error - yes 
+Also get an error message failed to add wine - yes   
+
+![test error add wine](/documentation/testing/test-err-add-wine.png)
+
+if wine is successfully added you get a success message to say the name of the wine has been added and the user gets brought to the wine detail page for the new wine - yes  
+If an image is not selected then a stock image is used - yes  
+
+#20 edit a wine
+
+Again there is security in place to only allow the store owner - yes  
+
+The store owner has access to edit and delete any wine from the store - yes  
+
+![test edit button](/documentation/testing/test-edit-but.png)
+
+When the store owner clicks edit, they are brought ot the edit wine page - yes 
+They also get a message that they are editing the name of the wine - yes   
+the edit wine page is very similar to the add wine page and the same field validation is in place so the price can't be greater than 6 digits etc -yes  
+
+![test edit wine](/documentation/testing/test-edit-wine.png)
+
+When update wine button is clicked, the store owner gets a message that the wine name has been updated and they are brought to the wine detail page for this wine - yes  
+
+#21 delete a wine
+
+Again the security is in place that only the store owner can delete wines - yes  
+
+When the delete button is clicked, a message to make sure they want to delete the wine is displayed and they have to click ok for the deletion to go ahead - yes  
+
+![test delete wine](/documentation/testing/test-delete.png)
+
+A message to say the name of the wine has been deleted - yes  
+They are redirected back to the wines page - yes  
+
+#22 view blog list
+
+All users can access the blogs.  When a user clicks blog on the navbar they are taken to the blog page. This contains an image and a title for each blog - yes  
+
+![test blog](/documentation/testing/test-blog.png)
+
+#23 view blog details
+
+By clicking on the image of the blog brings the user to the blog detail page for that blog - yes  
+
+![test blog detail](/documentation/testing/test-blog-detail.png)
+
+At the bottom of the page there is a return to blogs and this brings them back to blog page - yes  
+
+#24 add blog
+
+Only the store owner can add blogs, there is security in place so if another users tries to access the add blog page they are redirected to the login page - yes  
+The store owner can access add blog page by going to their account on navbar and clicking blog management - yes  
+
+![test add blog](/documentation/testing/test-add-blog.png)
+
+The store owner must add a title and content for the blog, if either of these fields are left blank they get an error message - yes  
+If the store owner does not add an image a stock image will be added - yes
+When add blog button is clicked, they are brought to the blog detail page for the new blog and there is a success message successfully added blog - yes  
+
+#25 edit blog
+
+When the store owner is logged in, edit and delete buttons are available to them- yes 
+If a user that is not logged in tries to access the edit blog screen through the urls will be redirected to the login page - yes    
+Other signed in users trying to access the edit blog page will get a message to say only store owners are allowed to edit - yes  
+
+![test edit blog button](/documentation/testing/test-edit-blog-but.png)
+
+When edit button is clicked it brings the store owner to the edit blog page - yes  
+
+![test edit blog](/documentation/testing/test-edit-blog.png)
+
+The store owner gets a message to say they are editing the name of the blog - yes  
+Similar to the add blog the title and content fields must have something in them - yes  
+Again if an image is not selected a stock image will be used.
+
+When the update blog button is clicked, they are redirected to the blog detail page for the edited blog and they get a message to say successfully edited blog - yes  
+ 
+#26 delete blog
+
+Again the security is in place that only the store owner can delete blogs - yes  
+
+When the delete button is clicked, a message to make sure they want to delete the blog is displayed and they have to click ok for the deletion to go ahead - yes  
+
+![test delete blog](/documentation/testing/test-delete-blog.png)
+
+A message to say the name of the blog has been deleted - yes  
+They are redirected back to the blogs page - yes  
+
+#27 view customer reviews
+
+Customer reviews are displayed under the hero image on the home screen - yes  
+The reviews are in order with the most recently added first - yes  
+
+![test customer reviews](/documentation/testing/test-cust-review.png)
+
+#28 add customer review 
+
+Any user whether they are logged in or not can leave a customer review.
+When the add a review button is clicked it brings the user to add a review page
+
+![test add customer review](/documentation/testing/test-add-cust-review.png)
+
+The user does not have to fill in their name, but must give a rating and a comment, if not they get an error - yes  
+When they click add a review, they are redirected back to the home page and also get a message to say successfully added a review - yes  
+The store owner has to approve or publish the review before they can be seen on the website.
+If the reviewer is a logged in user, the review should have verified customer - yes  
+
+![test approve review](/documentation/testing/test-approved-cust-review.png)
+
+When store owner approves a review it is then visible - yes 
+
+#29 view wine review
+
+Wine reviews are listed under the wine in the wine detail page.
+
+![test wine reviews](/documentation/testing/test-wine-review.png)
+
+If no review exists for this wine a message is displayed - be the first to leave a review of name of wine.    
+Any user whether they are logged in or not can leave a review - yes  
+
+![test no wine reviews](/documentation/testing/test-no-wine-review.png)
+
+#30 add wine review
+
+Any user whether they are logged in or not can leave a wine review.
+When the write a review button is clicked it brings the user to add a wine review page - yes  
+
+![test no wine reviews](/documentation/testing/test-no-wine-review.png)
+
+The user does not have to fill in their name, but must give a rating and a review, if not they get an error - yes  
+When they click add a wine review, they are redirected back to the wine detail page and also get a message to say successfully added a wine review - yes  
+The store owner has to approve or publish the review before they can be seen on the website.
+When the store owner approves/publishes a wine review it is then visible - yes  
+If the reviewer is a logged in user, the review should have verified customer - yes  
+
+#31 publish reviews
+
+The store owner has to go into admin panel to change the reviews from draft to published so that they can be visible on the website - yes  
+
+#32 email marketing - mailchimp
+
+***  need to do in deployed site
+
+#33 privacy policy
+
+When the privacy button on the footer is clicked, the user is taken to the privacy policy page - yes  
+
+![test privacy](/documentation/testing/test-privacy.png)
+
+#34 about us
+
+When the About Us button on the footer is clicked, the user is taken to the About Us page - yes  
+
+![test about us](/documentation/testing/test-about.png)
+
+#35 faq
+
+When the FAQ button on the footer is clicked, the user is taken to the FAQ page - yes  
+
+![test FAQ](/documentation/testing/test-faq.png)
+
+#36 messages
+
+I have mentioned the messages that appear due to users actions throughout the testing above.  
+
+test for 404 - page not found
+
+When you check for a page that does not exist, the user gets a 404 page - yes  
+
+
 
 ### Lighthouse
 
@@ -765,7 +1131,7 @@ I have included a env.sample file to show what keys etc are required for this pr
 
 ## Web Marketing
 
-Dionne's Wines is a business to customer business, where we want to reach as many customers as possible, to sell as many bottles of wine as possible.  We want to do this in a way to sttract new customers but also retain our existing customers.
+Dionne's Wines is a business to customer business, where we want to reach as many customers as possible, to sell as many bottles of wine as possible.  We want to do this in a way to attract new customers but also retain our existing customers.
 
 ### Search Engine Optimisation (SEO)
 
