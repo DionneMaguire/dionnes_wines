@@ -2,7 +2,7 @@
 
 ## Purpose of this site
 
-This site has been created so that users can buy wine from the store.  Users can also read the wine descriptions to help decide what to buy.  They can also read the blog posts about new wines, vineyards etc.  Users can also add reviews about their shopping experience and also review individual wines that they have bought.  These reviews are available for all users to view.  The store owner/ superuser can add, edit and delete wines available for sale.  The store owner can also add blog posts for all users to view.  All users can buy from the store whether they are logged in or not.  The advantage of logged in users is that their delivery information can be stored and also their order history is displayed in their profile.
+This site has been created so that users can buy wine from the store.  Users can also read the wine descriptions to help decide what to buy.  They can also read the blog posts about new wines, vineyards etc.  Users can also add reviews about their shopping experience and also review individual wines that they have bought.  These reviews are available for all users to view.  The store owner/ superuser can add, edit and delete wines available for sale.  The store owner can also add blog posts for all users to view and edit and delete the blogs.  All users can buy from the store whether they are logged in or not.  The advantage of logged in users is that their delivery information can be stored and also their order history is displayed in their profile.
 
 ![Am I responsive](/documentation/images/amiresp-wine.png)
 
@@ -10,7 +10,7 @@ This site has been created so that users can buy wine from the store.  Users can
 
 ### User Goals
 
-#### Not signed in user
+#### User not logged in
 
 - find out the purpose of the site and how to use it
 - be able to easily navigate throughout the site
@@ -23,7 +23,7 @@ This site has been created so that users can buy wine from the store.  Users can
 - be able to review wines
 
 #### logged in users
-- can do all that a not signed in user can do +
+- can do all that a not logged in user can do +
 - save their delivery details to their profile
 - delivery information is prepopulated in their checkout process, to speed up the process
 - can logout of their account to keep their information safe
@@ -31,7 +31,7 @@ This site has been created so that users can buy wine from the store.  Users can
 #### site owner / superuser
 - can add, edit and delete wines form the store
 - can add, edit and delete blog posts
-- can approve customer reviews and wine reviews from customers ( only approved reviews will be visible on the website)
+- can approve customer reviews and wine reviews from customers (only approved reviews will be visible on the website)
 
 ### User Stories
 
@@ -140,7 +140,7 @@ The search box is reduced to the word search, but when the user clicks on it the
 
 #### Footer
 
-On larger screens the footer contains is split into 2 columns, the first is the social media link to Dionne's Wines Facebook page. If the user clicks on the facebook link it will open in a new page.  The second column contains the form from mailchimp for users to enter their email so that they receive direct emails with promotions and discounts.  Under these 2 columns are 3 links to the privacy policy, the 'About Us' page and the FAQ page.
+On larger screens the footer container is split into 2 columns, the first is the social media link to Dionne's Wines Facebook page. If the user clicks on the facebook link it will open in a new page.  The second column contains the form from mailchimp for users to enter their email so that they receive direct emails with promotions and discounts.  Under these 2 columns are 3 links to the privacy policy, the 'About Us' page and the FAQ page.
 
 ![desk footer](/documentation/images/desk-footer.png)
 
@@ -189,7 +189,7 @@ The home page can be accessed by clicking the logo 'Dionne's Wines'.  The home p
 
 ![top of home page](/documentation/images/home1.png)
 
-Under the hero image are customer reviews.  There are 4 reviews accross the page.  On mobile the reviews are stacked.
+Under the hero image are customer reviews.  There are 4 reviews across the page.  On mobile the reviews are stacked.
 
 ![reviews on home page](/documentation/images/home2.png)
 
@@ -199,7 +199,7 @@ There is a button for users to leave their review.  If they click the leave a re
 
 ![customer review](/documentation/images/cust-review.png)
 
-The user has the option of filling in the review or returning to the home page.  If they fill in the review and submit it they get a message to say successfully added a review.  The store owner has to approve the review before it can be viewed on the site.
+The user has the option of filling in the review or returning to the home page. The user has to fill the rating and the review or they get an error. If they fill in the review correctly and submit it they get a message to say successfully added a review.  The store owner has to approve the review before it can be viewed on the site.
 
 ### Wine list
 
@@ -234,7 +234,7 @@ If the user clicks write a review they are taken to the add wine review page.
 
 ![add wine review](/documentation/images/add-wine-review.png)
 
-It has the name of the wine that the user is going to review.  The user fills in the form and clicks add a wine review.  The user gets a message to say successfully added a wine review.  The store owner has to approve the review before it can be viewed on the website.
+It has the name of the wine that the user is going to review.  The user has to fill in rating and review or they get an error.  If the user fills in the form and clicks add a wine review,  they gets a message to say successfully added a wine review.  The store owner has to approve the review before it can be viewed on the website.
 
 ### Bag page
 
@@ -250,12 +250,12 @@ The checkout page is split into 2 columns. The first column holds the delivery i
 
 ![checkout](/documentation/images/checkout.png)
 
-If the user is logged in and has saved their delivery details to their profile the form will be filled in with their details.  If it is the users first time to order, they can fill in the checkout page and then select the save these details to my profile, and the next time they will have the form prefilled.  If the user is not signed in they will be given the option to register and login so that they can save their details.
+If the user is logged in and has saved their delivery details to their profile the form will be filled in with their details.  If the user is logged in and it is their first time to order, they can fill in the checkout page and then select the save these details to my profile, and the next time they will have the form prefilled.  If the user is not signed in they will be given the option to register and login so that they can save their details.
 
 On mobile the 2 columns will be stacked, with the order information first and then the delivery and payment form.
 
 The fields on the form that are required have *. Any error in filling in the form, the page will be reloaded with the error message.
-When the complete order button is clicked a spinner is overlayed the whole screen to show the payment is being processed.  If the payment is a success the user gets a succes message with their order number and a message to say that a confirmation email has been sent to the users email.  The user is brought to a confirmation page.
+When the complete order button is clicked a spinner is overlayed the whole screen to show the payment is being processed.  If the payment is a success the user gets a success message with their order number and a message to say that a confirmation email has been sent to the users email.  The user is brought to a confirmation page.
 
 ### Confirmation Page
 
@@ -265,7 +265,7 @@ The confirmation page tells the user thanks for the order and that a confirmatio
 
 ### Blog page
 
-If the user clicks on blog on the navbar, they will be taken to the blog list page.  Each blog has an image, date and a title.  On large screens there are 3 blogs accross the page, on mobile one blog is stacked on top of the next.
+If the user clicks on blog on the navbar, they will be taken to the blog list page.  Each blog has an image, date and a title.  On large screens there are 3 blogs across the page, on mobile one blog is stacked on top of the next.
 
 ![blog](/documentation/images/blog.png)
 
@@ -303,7 +303,7 @@ On the wine detail page
 
 ![wine detail edit delete](/documentation/images/detail-edit-del.png)
 
-From either page if the store owner clicks edit they are taken to the edit wine page.  The store owner also gets an alert message to say that they are editing and name the wine.
+From either page if the store owner clicks edit they are taken to the edit wine page.  The store owner also gets an alert message to say that they are editing the named the wine.
 
 ### Edit Wine page
 
@@ -321,7 +321,7 @@ If the store owner clicks the delete button for a wine, a message pops up to ask
 
 If they click ok, then the wine is deleted and they get a message to say the named wine has been deleted.
 
-The store owner can also add, edit and delete blogs.   There is security for this similar to the add wines and to stop people accessing these pages through the urls.The option for Blog management, brings the store user to the add blog page.
+The store owner can also add, edit and delete blogs.   There is security for this similar to the add wines and to stop people accessing these pages through the urls.  The option for Blog management, brings the store user to the add blog page.
 
 ### Add blog page
 
@@ -340,7 +340,7 @@ If the store owner clicks the edit button, they are brought to the edit blog pag
 
 The edit blog page is very similar to the add blog page, except the details of the blog being edited are already pre-filled.
 
-![edit blog](/documentation/images/blog-edit.png)
+![edit blog](/documentation/images/edit-blog.png)
 
 The store owner can either cancel out of the page or edit the blog and click update blog.
 When update blog is clicked, a success message is shown and they are brought back to the blog detail for the edited blog.
@@ -585,6 +585,8 @@ for FAQ page
 
 ### CSS validation
 
+I pasted the css files into W3C CSS validation.
+
 for base.css
 
 ![css base](/documentation/validation/css-base.png)
@@ -661,7 +663,7 @@ for checkout>webhook_handler
 I have 2 lines that are too long but I couldn't find a way of splitting the line with the same functionality
 
 for checkout>webhooks
-![pep8 checkout-webhooks](/documentation/validation/pep8-check-webhooks.png)
+![pep8 checkout-webhooks](/documentation/validation/pep8-check-webhook.png)
 I have 1 line too long, that I couldn't split.
 
 for dionnes>settings
@@ -729,7 +731,8 @@ for wines>widgets
 ![pep8 wines-widgets](/documentation/validation/pep8-wines-widgets.png)
 
 ### JS validation
-I pasted js code into JS validator
+I pasted js code into JS validator.  
+
 for js at the bottom of bag.html
 ![js bag.html](/documentation/validation/js-bag.png)
 
@@ -906,7 +909,7 @@ And finally check in the database to make sure the order has been added -yes
 ![test order in db](/documentation/testing/test-order-admin.png)
 
 If for some reason the user clicks out of the browser when their payment is being processed, the webhook checks if the order has been written to the database and if not the webhook handler writes the order to database.  I can produce this situation by commenting out my form.submit in stripe_element.js.  
-payment successful stripe - yess  
+payment successful stripe - yes  
 webhook successful - yes
 order in database - yes
 
@@ -918,7 +921,7 @@ When payment has been processed the user is brought to confirmation page and an 
 
 #14 User profile
 
-When a user registers, a user profile is set up for them. It is empty appart from their email address that they used to register with. The user has 2 options they can go into my profile from the navbar and save their details or through the checkout process documented above they have the option of saving their delivery details so that the next time through the checkout process their details will be prefilled in the checkout form.
+When a user registers, a user profile is set up for them. It is empty apart from their email address that they used to register with. The user has 2 options they can go into my profile from the navbar and save their details or through the checkout process documented above they have the option of saving their delivery details so that the next time through the checkout process their details will be prefilled in the checkout form.
 
 Also on the profile page is the users past orders that they can click on the individual orders and see the details.  
 
@@ -950,8 +953,8 @@ When they click wine management they are brought to the add wine page - yes
 ![test add wine](/documentation/testing/test-add-wine.png)
 
 The required fields have astericks and need to be filled or the user gets an error - yes  
-The category field is a dropdown box.  If the store owner needs to add another category they will have to go to admin to add it and then the new category will be available here - yes 
-If the price has too many digits - max is 6 you get error - yes 
+The category field is a dropdown box.  If the store owner needs to add another category they will have to go to admin to add it and then the new category will be available here - yes   
+If the price has too many digits - max is 6 you get error - yes   
 Also get an error message failed to add wine - yes   
 
 ![test error add wine](/documentation/testing/test-err-add-wine.png)
@@ -1043,7 +1046,7 @@ They are redirected back to the blogs page - yes
 #27 view customer reviews
 
 Customer reviews are displayed under the hero image on the home screen - yes  
-The reviews are in order with the most recently added first - yes  
+The reviews are in order with the most recent displaying first - yes  
 
 ![test customer reviews](/documentation/testing/test-cust-review.png)
 
@@ -1056,7 +1059,7 @@ When the add a review button is clicked it brings the user to add a review page
 
 The user does not have to fill in their name, but must give a rating and a comment, if not they get an error - yes  
 When they click add a review, they are redirected back to the home page and also get a message to say successfully added a review - yes  
-The store owner has to approve or publish the review before they can be seen on the website.
+The store owner has to approve or publish the review before the review can be seen on the website.
 If the reviewer is a logged in user, the review should have verified customer - yes  
 
 ![test approve review](/documentation/testing/test-approved-cust-review.png)
@@ -1142,8 +1145,9 @@ Testing of mobile for home page
 - I created a new repository in github called dionnes_wines
 - I created a workspace using code institute template
 - I installed django 3.2 using pip3 install django==3.2
-- I created a project called dionnes_wines
-- create a .gitignore file
+- I created a project called dionnes_wines using django-admin startproject dionnes_wines
+- create a .gitignore file and add the sqlite3 database and compiled python code
+- create an env.py file for secret keys, listed in .gitignore file
 - I ran initial migrations
 - I created a superuser 
 - I installed django-allauth
@@ -1164,13 +1168,15 @@ Testing of mobile for home page
 - load in the fixtures
 - create a superuser for new database
 - check in elephantsql that all your fixtures are loaded
+- in settings.py  if development point to sqlite3 and if production point to elephantsql
 - need to install gunicorn, freeze requirements
+- create a Procfile
 - need to add the hostname of heroku app to allowed_hosts in settings.py
 - git push all changes
 - git push heroku main to deploy to heroku
 - In heroku app, go to deploy tab and connect to github, search for my repository and connect
 - can enable automatic deploys, so everytime we push to github my code will automatically deploy to heroku
-- set up secret_key and stripe key in heroku config vars
+- set up secret_key and stripe keys in heroku config vars
 - set up aws s3 cloud based storage for my static files and images 
 - to connect django to aws we need to install boto3 and django-storages freeze requirements
 - add aws settings to settings.py
@@ -1178,6 +1184,9 @@ Testing of mobile for home page
 - static files will now be collected into a static folder in my s3 bucket
 - add our media files to aws s3 bucket
 - need to confirm the email of the superuser in admin so that they can log in
+- add email keys to config vars
+- set debug to true if development otherwise false 
+
 
 ### Making a local clone
 
@@ -1241,4 +1250,5 @@ Dionne's Wines Facebook page
 ## Acknowledgements
 - I would not have completed this project without the support and understanding of my family and friends.
 - Wonderful help and support from my cohort and facilitator Kasia.
-- Help and support from my mentor Celestine Okoro.
+- Help,support and inspiration from my mentor Celestine Okoro.
+- I used tutor support more than ever for this project and each time they were so helpful and took time to explain so I not only got my issue resolved, I also learnt lots!
