@@ -30,7 +30,7 @@ This site has been created so that users can buy wine from the store.  Users can
 
 #### site owner / superuser
 - can add, edit and delete wines form the store
-- can add blog posts to the site
+- can add, edit and delete blog posts
 - can approve customer reviews and wine reviews from customers ( only approved reviews will be visible on the website)
 
 ### User Stories
@@ -41,7 +41,7 @@ I used Github issues to record the following user stories:
 - email confirmation on registration - as a site user I can receive an email confirmation so that I can verify account registration has been successful
 - personal user profile - As a site user I can have a personalised user profile so that I can view delivery information and order confirmation
 - view list of wines - As a site user I can view a list of wines so that I can select some to buy
-- view individual wine details - As a site user i can view individual wine details so that I can view the details and add to my bag
+- view individual wine details - As a site user I can view individual wine details so that I can view the details and add to my bag
 - sort wines - as a site user I can sort the list of available wines so that I can easily identify what I want
 - search - As a site user I can search for wine by name or description so that I can find a specific wine
 - search results - As a site user I can easily see what I have searched for and the number of results so that I can quickly see what is available
@@ -49,7 +49,7 @@ I used Github issues to record the following user stories:
 - view total spend - As a site user I can see the total of my purchases so that I avoid overspending
 - select quantity - As a site user I can easily select quantity of wine when purchasing so that I don't accidentally select too much
 - view bag - as a site user I can view items in my bag so that I can clearly see the items I am going to purchase and the total cost
-- adjust quantity - As a site user I can adjust the quantity od individual wines in my bag so that I can easily make changes to my bag before checkout
+- adjust quantity - As a site user I can adjust the quantity of individual wines in my bag so that I can easily make changes to my bag before checkout
 - payment information - as a site user I can easily enter payment information so that I can checkout quickly and easily
 - secure infromation - as a site user I feel my information is safe and secure so that I can confidently provide information to make purchase
 - view order confirmation - as a site user I can view an order confirmation after checkout so that I can verify I haven't made a mistake
@@ -57,13 +57,13 @@ I used Github issues to record the following user stories:
 - free delivery - as a site user I can see clearly how much more I have to spend to get free delivery so that I can make decision to buy more
 - add a wine - as a store owner I can add a wine so that I can add it to the store
 - edit wine - as a store owner I can edit a wine so that I can change prices and details
-- delete wine - as astore owner I can delete a wine so that I can remove from store if it is not longer available
-- view list of blogs - as a site user I can view a list of blogs so that I can choose whiah to read
+- delete wine - as a store owner I can delete a wine so that I can remove from store if it is not longer available
+- view list of blogs - as a site user I can view a list of blogs so that I can choose which to read
 - view blog detail - as a site user I can view blog details so that I can learn interesting facts about wine
 - add blogs - as a store owner I can add blogs to the website so that I can give users interesting and informative information
 - edit blog - as a store owner I can edit a blog so that I can update information
 - delete blog - as a store owner I can delete a blog so that I can remove it if it is no longer relevant
-- view customer reviews - as a site user I can view customer reviews so I can decide whether or not to but from the site
+- view customer reviews - as a site user I can view customer reviews so I can decide whether or not to buy from the site
 - add review - as a site user I can add a review so that I can share my experience with the other users
 - view wine reviews - as a site user I can view wine reviews so that I can decide what to buy
 - add wine review - as a site user I can add a wine review so that I can share information with other users
@@ -76,7 +76,7 @@ I used Github issues to record the following user stories:
 
 ### Agile Development Tool
 
-I am using an agile software development tool in the development of this website.  I am using Github Projects, using a basic Kanban Template.  I addded automation so that as each issue is added , it adds it to the 'To Do' list for my project.  as I started working on each issue I move it to the 'In progress' column.  When coding was completed , the issue was then moved to the 'done' column.
+I am using an agile software development tool in the development of this website.  I am using Github Projects, using a basic Kanban Template.  I added automation so that as each issue is added , it adds it to the 'To Do' list for my project.  as I started working on each issue I move it to the 'In progress' column.  When coding was completed , the issue was then moved to the 'done' column.
 
 ![github project](/documentation/images/userstories1.png)
 ![github project](/documentation/images/userstories2.png)
@@ -140,7 +140,7 @@ The search box is reduced to the word search, but when the user clicks on it the
 
 #### Footer
 
-On larger screens the footer contains is split into 2 columns, the first is the social media link to Dionne's Wines Facebook page. If the user clicks on the facebook link it will open in a new page.  The second column containes the form from mailchimp for users to enter their email so that they receive direct emails with promotions and discounts.  Under these 2 columns are 3 links to the privacy policy, the 'About Us' page and the FAQ page.
+On larger screens the footer contains is split into 2 columns, the first is the social media link to Dionne's Wines Facebook page. If the user clicks on the facebook link it will open in a new page.  The second column contains the form from mailchimp for users to enter their email so that they receive direct emails with promotions and discounts.  Under these 2 columns are 3 links to the privacy policy, the 'About Us' page and the FAQ page.
 
 ![desk footer](/documentation/images/desk-footer.png)
 
@@ -181,7 +181,7 @@ If a user has signed in they have access to their profile.  Their profile holds 
 
 ![profile](/documentation/images/profile.png)
 
-The user can update their delivery information and it is saved to their profile or when they are ordered wine their is an option in the checkout process for them to save their delivery information and it is saved to their profile.
+The user can update their delivery information and it is saved to their profile or through the checkout process there is an option for them to save their delivery information and it is saved to their profile.
 
 ### Home page
 
@@ -208,7 +208,7 @@ This has an image of the bottle, the grape type, the region, the country, price 
 
 ![wines](/documentation/images/wines.png)
 
-On larger screens there are 4 bottles accross the screen, going down to 3 accross, then 2 accross, until they are stacked in mobile.  The category tags at the bottom of each bottle of wine also lets the user get all the white wines if they click the white wine tag. If the user clicks the bottle they are taken to the wine detail page.  There is a arrow button to return to the top of the page.
+On larger screens there are 4 bottles across the screen, going down to 3 across, then 2 across, until they are stacked in mobile.  The category tags at the bottom of each bottle of wine also lets the user get all the white wines if they click the white wine tag. If the user clicks the bottle they are taken to the wine detail page.  There is a arrow button to return to the top of the page.
 
 ### Wine details
 
@@ -246,7 +246,7 @@ This page contains the wine information, the price, quantity and subtotal.  At t
 
 ### Checkout page
 
-The checkout page is split into 2 columns. The first column holds the delivery information for the user and the secong column holds the order summary.  
+The checkout page is split into 2 columns. The first column holds the delivery information for the user and the second column holds the order summary.  
 
 ![checkout](/documentation/images/checkout.png)
 
@@ -263,9 +263,9 @@ The confirmation page tells the user thanks for the order and that a confirmatio
 
 ![confirmation page](/documentation/images/confirmation.png)
 
-### blog page
+### Blog page
 
-If the user clicks on blog on the navbar, they will be taken to the blog list page.  Each blog has an image, date and a title.  On large scereens there are 3 blogs accross the page, on mobile one blog is stacked on top of the next.
+If the user clicks on blog on the navbar, they will be taken to the blog list page.  Each blog has an image, date and a title.  On large screens there are 3 blogs accross the page, on mobile one blog is stacked on top of the next.
 
 ![blog](/documentation/images/blog.png)
 
@@ -273,7 +273,7 @@ If the user wants to read the blog detail they just click on the image and they 
 
 ### Blog detail page
 
-The blog detail page, has the image, title, date and content of the blog.  On large screens it is displayed as 2 columns, with the first column holding the image anf the second column holding the details of the blog.
+The blog detail page, has the image, title, date and content of the blog.  On large screens it is displayed as 2 columns, with the first column holding the image and the second column holding the details of the blog.
 
 ![blog detail](/documentation/images/blog-detail.png)
 
@@ -281,7 +281,7 @@ On mobile the columns are stacked.
 
 ### Store owner / superuser options
 
-For the store owner, they need to be able to add, edit and delete wines.  So if the store owner or superuser is logged in, they have access to wine management from the navbar.  I ahve added security that only superuser can access these pages and even if people try to access them through the urls they will not be able to do so.
+For the store owner, they need to be able to add, edit and delete wines.  So if the store owner or superuser is logged in, they have access to wine management from the navbar.  I have added security that only superuser can access these pages and even if people try to access them through the urls they will not be able to do so.
 
 ![wine mgt](/documentation/images/wine-mgt.png)
 
@@ -291,7 +291,7 @@ If the store owner clicks wine management they are brought to the add wine page.
 
 ![add wine](/documentation/images/add-wine.png)
 
-The fields that are required have an astericks. The store owner can either cancel out of the page or fill in the form and add wine. The category is a drop down box so we can only pick from the categories in the database. When the form is filled in and add wine clicked, the store owner will get a message to say the wine has been successfully added and they are returned to the wine detail page of the wine just added. If an image is not selected then a stock image is added to the wine.
+The fields that are required have an asterick. The store owner can either cancel out of the page or fill in the form and add wine. The category is a drop down box so we can only pick from the categories in the database. When the form is filled in and add wine clicked, the store owner will get a message to say the wine has been successfully added and they are returned to the wine detail page of the wine just added. If an image is not selected then a stock image is added to the wine.
 
 When logged in as store owner /superuser, when they view the wine list page or the wine details page there is an option to edit or delete each wine.  There is added security to ensure that only the store owner can do these operations and people can not access them through the urls.
 
@@ -303,7 +303,7 @@ On the wine detail page
 
 ![wine detail edit delete](/documentation/images/detail-edit-del.png)
 
-From either page if the store owner clicks edit they are taken to the edit wine page.  The store owner also gets an alert messgae to say that they are editing and name the wine.
+From either page if the store owner clicks edit they are taken to the edit wine page.  The store owner also gets an alert message to say that they are editing and name the wine.
 
 ### Edit Wine page
 
@@ -518,7 +518,7 @@ I have kept the layout and colours simple, to let the wines take center stage.
 ## Code Validation
 
 ### HTML validation
-To validate each of my html pages I inspected the page through devtools and viewed the page source and copied and pasted into the W3C markup validation service.
+To validate each of my html pages I pasted the urls into the W3C markup validation service.
 
 for sign up page
 ![html sign up](/documentation/validation/html-signup.png)
@@ -800,7 +800,7 @@ When you click the confirm button you are brought to the login page.  There is a
 
 The login form has to be filled in, or get error message, user and password have to match. When click login, you get a success message - you have successfully logged in as username.
 When logged in the options in my account dropdown change to profile and logout - yes  
-When I click logout, I am brought to a logout page to check I resally want to logout, if click sigout, I get a message to say you have logged out.
+When I click logout, I am brought to a logout page to check I really want to logout, if click signout, I get a message to say you have logged out.
 
 #4 view a list of wines
 
@@ -930,13 +930,13 @@ I have security in place so that a non logged in user cannot access this page an
 
 #18 free delivery threshold
 
-Check that they free threshold is working correctly.  
-if the user has spent more than €60, they have free delivery - yes  
-if the user has spent less than €60, there is a message to say how much more they have to spend to get free delivery - yes  
+Check that the free threshold is working correctly.  
+If the user has spent more than €60, they have free delivery - yes  
+If the user has spent less than €60, there is a message to say how much more they have to spend to get free delivery - yes  
 
 #19 add a wine
 
-This is only available to the store owner, if a not logged in user tries to get to the add wine page they are redirected to the sign in page - yes 
+This is only available to the store owner, if a not logged in user tries to get to the add wine page they are redirected to the sign in page - yes  
 If a logged in user not the store owner tries to access the add wine page they get an error message - yes  
 
 ![test user not store owner](/documentation/testing/test-err.png)
@@ -956,7 +956,7 @@ Also get an error message failed to add wine - yes
 
 ![test error add wine](/documentation/testing/test-err-add-wine.png)
 
-if wine is successfully added you get a success message to say the name of the wine has been added and the user gets brought to the wine detail page for the new wine - yes  
+If wine is successfully added you get a success message to say the name of the wine has been added and the user gets brought to the wine detail page for the new wine - yes  
 If an image is not selected then a stock image is used - yes  
 
 #20 edit a wine
@@ -967,9 +967,9 @@ The store owner has access to edit and delete any wine from the store - yes
 
 ![test edit button](/documentation/testing/test-edit-but.png)
 
-When the store owner clicks edit, they are brought ot the edit wine page - yes 
-They also get a message that they are editing the name of the wine - yes   
-the edit wine page is very similar to the add wine page and the same field validation is in place so the price can't be greater than 6 digits etc -yes  
+When the store owner clicks edit, they are brought ot the edit wine page - yes   
+They also get a message that they are editing the name of the wine - yes     
+The edit wine page is very similar to the add wine page and the same field validation is in place so the price can't be greater than 6 digits etc -yes  
 
 ![test edit wine](/documentation/testing/test-edit-wine.png)
 
@@ -1007,14 +1007,14 @@ The store owner can access add blog page by going to their account on navbar and
 
 ![test add blog](/documentation/testing/test-add-blog.png)
 
-The store owner must add a title and content for the blog, if either of these fields are left blank they get an error message - yes  
-If the store owner does not add an image a stock image will be added - yes
+The store owner must add a title and content for the blog, if either of these fields are left blank they get an error message - yes    
+If the store owner does not add an image a stock image will be added - yes  
 When add blog button is clicked, they are brought to the blog detail page for the new blog and there is a success message successfully added blog - yes  
 
 #25 edit blog
 
-When the store owner is logged in, edit and delete buttons are available to them- yes 
-If a user that is not logged in tries to access the edit blog screen through the urls will be redirected to the login page - yes    
+When the store owner is logged in, edit and delete buttons are available to them- yes   
+If a user that is not logged in tries to access the edit blog screen through the urls will be redirected to the login page - yes      
 Other signed in users trying to access the edit blog page will get a message to say only store owners are allowed to edit - yes  
 
 ![test edit blog button](/documentation/testing/test-edit-blog-but.png)
@@ -1093,7 +1093,9 @@ The store owner has to go into admin panel to change the reviews from draft to p
 
 #32 email marketing - mailchimp
 
-***  need to do in deployed site
+I created a temporary email on temp-mail.org and subscribed on the mailchimp form and checked that this email appeared as a new contact in my mailchimp account - yes  
+
+![test mail](/documentation/testing/test-mail.png)
 
 #33 privacy policy
 
@@ -1135,6 +1137,66 @@ Testing of mobile for home page
 
 ## Deployment, forking and making a clone
 
+### Deployment
+
+- I created a new repository in github called dionnes_wines
+- I created a workspace using code institute template
+- I installed django 3.2 using pip3 install django==3.2
+- I created a project called dionnes_wines
+- create a .gitignore file
+- I ran initial migrations
+- I created a superuser 
+- I installed django-allauth
+- my development database is sqlite3
+- Need to freeze requirements - pip3 freeze > requirements.txt
+- Need to create the different apps within project - python3 manage.py startapp nameapp
+- need to add the apps in settings.py
+- create the models, make migrations and then migrate them
+
+- create an app on heroku called dionnes-wines
+- create an external database on ElephantSQL 
+- in heroku config vars set up the database_url
+- need to install dj_database_url and psycopg2 in gitpod
+- freeze requirements
+- import dj_database_url at top of settings.py file. comment out connection to sqlite3 and connect to the elephantsql database
+- run show migrations to confirm connected to elephantsql db
+- migrate db models
+- load in the fixtures
+- create a superuser for new database
+- check in elephantsql that all your fixtures are loaded
+- need to install gunicorn, freeze requirements
+- need to add the hostname of heroku app to allowed_hosts in settings.py
+- git push all changes
+- git push heroku main to deploy to heroku
+- In heroku app, go to deploy tab and connect to github, search for my repository and connect
+- can enable automatic deploys, so everytime we push to github my code will automatically deploy to heroku
+- set up secret_key and stripe key in heroku config vars
+- set up aws s3 cloud based storage for my static files and images 
+- to connect django to aws we need to install boto3 and django-storages freeze requirements
+- add aws settings to settings.py
+- add aws keys in heroku config vars
+- static files will now be collected into a static folder in my s3 bucket
+- add our media files to aws s3 bucket
+- need to confirm the email of the superuser in admin so that they can log in
+
+### Making a local clone
+
+- log in to github and locate the github repository
+- under the repository name, click 'clone or download'
+- to clone the repository using HTTPS, under 'clone with HTTPS', copy the link
+- open commandline inteface on your computer
+- change the current working directory to the location where you want the cloned directory to be made
+- type git clone, and then paste the url you copied above
+- press enter. your clone will be created
+
+### Forking the github repository
+
+By forking the GitHub Repository you will be able to make a copy of the original repository on your own GitHub account allowing you to view and/or make changes without affecting the original repository by using the following steps:
+
+- Log in to GitHub and locate the GitHub Repository.
+- At the top of the Repository (not top of page) just above the "Settings" button on the menu, locate the "Fork" button.
+- You should now have a copy of the original repository in your GitHub account.
+
 I have included a env.sample file to show what keys etc are required for this project.
 
 ## Web Marketing
@@ -1148,11 +1210,11 @@ I improved my search engine optimization by using semantic html and using strong
 
 ### Content Marketing
 
-Dionne's Wines has included meaningful content to attract new customers and retain customers, with the description of each wine. Also including other customers feedback on their buying experience with Dionne's Wines, which will hopefully evoke an emotional response to build trust and loyalty. Sharing customers reviews of the individual wines gives new and existing customers more information to help them make decisions on what to buy. Finally their are blog posts to give customers information on new wines and vineyards that the wines are from.  This shows off Dionne's Wines expertise and positions them as a reliable, trustworthy source of information.  Content marketing must work closely with SEO and social media.  Dionne's wines will have to add interesting and relevant blog posts on a regular basis to keep their customers engaged and informed.  It also needs to be organised and consistent in order to build up their reputation.
+Dionne's Wines has included meaningful content to attract new customers and retain customers, with the description of each wine. Also including other customers feedback on their buying experience with Dionne's Wines, which will hopefully evoke an emotional response to build trust and loyalty. Sharing customers reviews of the individual wines gives new and existing customers more information to help them make decisions on what to buy. Finally there are blog posts to give customers information on new wines and vineyards that the wines are from.  This shows off Dionne's Wines expertise and positions them as a reliable, trustworthy source of information.  Content marketing must work closely with SEO and social media.  Dionne's wines will have to add interesting and relevant blog posts on a regular basis to keep their customers engaged and informed.  It also needs to be organised and consistent in order to build up their reputation.
 
 ### Social Media Marketing
 
-Social media allows you to share content that attracts relevant customers and keep in touch with how customers feel about your brand. Dionne's Wines can do this through their facbook page.  This extends their reach to new potiential customers. Dionne's Wines will have to post regularly to their facebook page with interesting articles, new wines available and special offers, to remind their followers of what they are offering, this pairs very nicely with content marketing.  As Dionne's Wines is a small growing business this will be done organically first, as this is free.  This will build Dionne's Wines identity and become recognisable to customers.  There is a risk that there could be negative feedback about Dionne's Wines, which would abviously be bad for business.
+Social media allows you to share content that attracts relevant customers and keep in touch with how customers feel about your brand. Dionne's Wines can do this through their facebook page.  This extends their reach to new potiential customers. Dionne's Wines will have to post regularly to their facebook page with interesting articles, new wines available and special offers, to remind their followers of what they are offering, this pairs very nicely with content marketing.  As Dionne's Wines is a small growing business this will be done organically first, as this is free.  This will build Dionne's Wines identity and become recognisable to customers.  There is a risk that there could be negative feedback about Dionne's Wines, which would obviously be bad for business.
 
 ### Email marketing
 
@@ -1171,10 +1233,10 @@ Dionne's Wines Facebook page
 
 ## Credits
 
-- images and descriptions of wines taken from winesdirect.com
-- about us page based on winesdirect.ie and O'briens wines
-- content of blogs from winesdirect.ie
-- basic structure of store from Boutique Ado
+- Images and descriptions of wines taken from winesdirect.com
+- About us page based on winesdirect.ie and O'briens wines
+- Content of blogs from winesdirect.ie
+- Basic structure of store from Boutique Ado
 
 ## Acknowledgements
 - I would not have completed this project without the support and understanding of my family and friends.
